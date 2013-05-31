@@ -1,0 +1,252 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f660906cffa, pid=31942, tid=140074069878528
+#
+# JRE version: 6.0_38-b05
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (20.13-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libxcb.so.1+0x9ffa]  long long+0x1a
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x0000000000000000
+
+Registers:
+RAX=0x00007f66099cf7a0, RBX=0x0000000000000000, RCX=0x0000000000000001, RDX=0x0000000000000003
+RSP=0x00007f65892d5bf0, RBP=0x0000000000000000, RSI=0x00007f65892d5c40, RDI=0x0000000000000000
+R8 =0x00007f65892d5e6c, R9 =0x00007f65892d5e70, R10=0x0000000000000000, R11=0x0000000000000000
+R12=0x00007f65892d5c40, R13=0x00007f65892d5c70, R14=0x00007f6598000c20, R15=0x0000000000000000
+RIP=0x00007f660906cffa, EFLAGS=0x0000000000010206, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f65892d5bf0)
+0x00007f65892d5bf0:   00007f6598002020 00007f660906e840
+0x00007f65892d5c00:   ffffffffffffffff 0000000000000000
+0x00007f65892d5c10:   0000000000000000 00007f65892d5c40
+0x00007f65892d5c20:   00007f65892d5c70 00007f66096d8e3e
+0x00007f65892d5c30:   0000000000000000 0000000000000001
+0x00007f65892d5c40:   00007f65980076a0 0000000000000008
+0x00007f65892d5c50:   0000000000000000 0000000000000000
+0x00007f65892d5c60:   00007f66099cf7a0 0000000000000000
+0x00007f65892d5c70:   00007f659800d0d0 00007f6598000c20
+0x00007f65892d5c80:   00000000000000ab 00007f65892d5e70
+0x00007f65892d5c90:   00007f65892d5e6c 0000000000000000
+0x00007f65892d5ca0:   00007f65892d5d10 00007f66096d9317
+0x00007f65892d5cb0:   0000000000000000 0000000100000000
+0x00007f65892d5cc0:   00007f65892d5cd0 0000000000000000
+0x00007f65892d5cd0:   0000000000000007 00007f6598000c20
+0x00007f65892d5ce0:   00000000000000ab 00007f65892d5e70
+0x00007f65892d5cf0:   00007f65892d5e6c 00007f65892d5e60
+0x00007f65892d5d00:   00007f65892d5e58 00007f66096cf279
+0x00007f65892d5d10:   0000000034f10101 0100021e000000ab
+0x00007f65892d5d20:   023e0470023e0470 0000000000000000
+0x00007f65892d5d30:   00007f65892d5e78 00007f65894da0a0
+0x00007f65892d5d40:   00007f65892d5e74 00007f65892d5e7c
+0x00007f65892d5d50:   00007f65892d5e78 00000000000000ab
+0x00007f65892d5d60:   0000000000001000 00007f65892d86ed
+0x00007f65892d5d70:   00007f65892d5e78 00007f65892d5e7c
+0x00007f65892d5d80:   00007f65892d5e74 0000000000000000
+0x00007f65892d5d90:   0000000000000000 3a72b9d63a088889
+0x00007f65892d5da0:   0000000000000000 0000043800000780
+0x00007f65892d5db0:   0000001800000000 00007f659800b8c0
+0x00007f65892d5dc0:   00000000000000ab 0000000100000001
+0x00007f65892d5dd0:   0000000000000001 00000000ffffffff
+0x00007f65892d5de0:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x00007f660906cffa)
+0x00007f660906cfda:   eb bb 0f 1f 40 00 48 89 5c 24 e0 48 89 6c 24 e8
+0x00007f660906cfea:   31 ed 4c 89 64 24 f0 4c 89 6c 24 f8 48 83 ec 38
+0x00007f660906cffa:   44 8b 17 48 89 fb 45 85 d2 75 38 4c 8d 6f 18 49
+0x00007f660906d00a:   89 cc 89 14 24 48 89 74 24 08 4c 89 ef e8 f4 f3 
+
+Register to memory mapping:
+
+RAX=0x00007f66099cf7a0: <offset 0x3397a0> in /usr/lib/x86_64-linux-gnu/libX11.so.6 at 0x00007f6609696000
+RBX=0x0000000000000000 is an unknown value
+RCX=0x0000000000000001 is an unknown value
+RDX=0x0000000000000003 is an unknown value
+RSP=0x00007f65892d5bf0 is an unknown value
+RBP=0x0000000000000000 is an unknown value
+RSI=0x00007f65892d5c40 is an unknown value
+RDI=0x0000000000000000 is an unknown value
+R8 =0x00007f65892d5e6c is an unknown value
+R9 =0x00007f65892d5e70 is an unknown value
+R10=0x0000000000000000 is an unknown value
+R11=0x0000000000000000 is an unknown value
+R12=0x00007f65892d5c40 is an unknown value
+R13=0x00007f65892d5c70 is an unknown value
+R14=0x00007f6598000c20 is an unknown value
+R15=0x0000000000000000 is an unknown value
+
+
+Stack: [0x00007f6588ad6000,0x00007f65892d7000],  sp=0x00007f65892d5bf0,  free space=8190k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libxcb.so.1+0x9ffa]  long long+0x1a
+
+[error occurred during error reporting (printing native stack), id 0xb]
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:at safepoint (shutting down)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007f6610006bb0] Threads_lock - owner thread: 0x00007f6610067800
+
+Heap
+ PSYoungGen      total 322944K, used 138049K [0x00000000ebf60000, 0x0000000100000000, 0x0000000100000000)
+  eden space 317824K, 43% used [0x00000000ebf60000,0x00000000f45e8540,0x00000000ff5c0000)
+  from space 5120K, 5% used [0x00000000ffb00000,0x00000000ffb48000,0x0000000100000000)
+  to   space 5248K, 0% used [0x00000000ff5c0000,0x00000000ff5c0000,0x00000000ffae0000)
+ PSOldGen        total 64768K, used 41162K [0x00000000c3e00000, 0x00000000c7d40000, 0x00000000ebf60000)
+  object space 64768K, 63% used [0x00000000c3e00000,0x00000000c6632b20,0x00000000c7d40000)
+ PSPermGen       total 59456K, used 59393K [0x00000000bec00000, 0x00000000c2610000, 0x00000000c3e00000)
+  object space 59456K, 99% used [0x00000000bec00000,0x00000000c26005e8,0x00000000c2610000)
+
+Code Cache  [0x00007f660a000000, 0x00007f660a770000, 0x00007f6610000000)
+ total_blobs=3556 nmethods=3060 adapters=429 free_code_cache=92919872 largest_free_block=320
+
+Dynamic libraries:
+40000000-40009000 r-xp 00000000 08:07 1730159                            /usr/lib/jvm/java-6-sun-1.6.0.38/jre/bin/java
+40108000-4010a000 rwxp 00008000 08:07 1730159                            /usr/lib/jvm/java-6-sun-1.6.0.38/jre/bin/java
+415cd000-415ee000 rwxp 00000000 00:00 0                                  [heap]
+bec00000-c2610000 rwxp 00000000 00:00 0 
+c2610000-c3e00000 rwxp 00000000 00:00 0 
+c3e00000-c7d40000 rwxp 00000000 00:00 0 
+c7d40000-ebf60000 rwxp 00000000 00:00 0 
+ebf60000-100000000 rwxp 00000000 00:00 0 
+7f655c624000-7f655c627000 ---p 00000000 00:00 0 
+7f655c627000-7f655c725000 rwxp 00000000 00:00 0 
+7f655c725000-7f655c728000 ---p 00000000 00:00 0 
+7f655c728000-7f655c826000 rwxp 00000000 00:00 0 
+7f656b4cb000-7f656b4ce000 ---p 00000000 00:00 0 
+7f656b4ce000-7f656b5cc000 rwxp 00000000 00:00 0 
+7f656b5cc000-7f656b5cf000 ---p 00000000 00:00 0 
+7f656b5cf000-7f656b6cd000 rwxp 00000000 00:00 0                          [stack:32734]
+7f656b6cd000-7f656b6ce000 ---p 00000000 00:00 0 
+7f656b6ce000-7f656b74e000 rwxp 00000000 00:00 0 
+7f65705c5000-7f65705c8000 ---p 00000000 00:00 0 
+7f65705c8000-7f6570dc6000 rwxp 00000000 00:00 0 
+7f6580dc7000-7f6580e89000 r-xp 00000000 08:07 4989081                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/StkUGens.so
+7f6580e89000-7f6581088000 ---p 000c2000 08:07 4989081                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/StkUGens.so
+7f6581088000-7f658108c000 r-xp 000c1000 08:07 4989081                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/StkUGens.so
+7f658108c000-7f6581091000 rwxp 000c5000 08:07 4989081                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/StkUGens.so
+7f6581091000-7f658109f000 r-xp 00000000 08:07 4989079                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SLUGens.so
+7f658109f000-7f658129e000 ---p 0000e000 08:07 4989079                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SLUGens.so
+7f658129e000-7f658129f000 r-xp 0000d000 08:07 4989079                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SLUGens.so
+7f658129f000-7f65812a0000 rwxp 0000e000 08:07 4989079                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SLUGens.so
+7f65812a0000-7f65812a3000 r-xp 00000000 08:07 4989178                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VOSIM.so
+7f65812a3000-7f65814a2000 ---p 00003000 08:07 4989178                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VOSIM.so
+7f65814a2000-7f65814a3000 r-xp 00002000 08:07 4989178                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VOSIM.so
+7f65814a3000-7f65814a4000 rwxp 00003000 08:07 4989178                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VOSIM.so
+7f65814a4000-7f65814aa000 r-xp 00000000 08:07 4989024                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BBCut2UGens.so
+7f65814aa000-7f65816a9000 ---p 00006000 08:07 4989024                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BBCut2UGens.so
+7f65816a9000-7f65816aa000 r-xp 00005000 08:07 4989024                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BBCut2UGens.so
+7f65816aa000-7f65816ac000 rwxp 00006000 08:07 4989024                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BBCut2UGens.so
+7f65816ac000-7f65816ae000 r-xp 00000000 08:07 4989069                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDPollUGens.so
+7f65816ae000-7f65818ad000 ---p 00002000 08:07 4989069                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDPollUGens.so
+7f65818ad000-7f65818ae000 r-xp 00001000 08:07 4989069                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDPollUGens.so
+7f65818ae000-7f65818af000 rwxp 00002000 08:07 4989069                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDPollUGens.so
+7f65818af000-7f65818b1000 r-xp 00000000 08:07 4989491                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TestUGens.so
+7f65818b1000-7f6581ab0000 ---p 00002000 08:07 4989491                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TestUGens.so
+7f6581ab0000-7f6581ab1000 r-xp 00001000 08:07 4989491                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TestUGens.so
+7f6581ab1000-7f6581ab2000 rwxp 00002000 08:07 4989491                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TestUGens.so
+7f6581ab2000-7f6581abc000 r-xp 00000000 08:07 4989065                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDFFTUGens.so
+7f6581abc000-7f6581cbb000 ---p 0000a000 08:07 4989065                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDFFTUGens.so
+7f6581cbb000-7f6581cbc000 r-xp 00009000 08:07 4989065                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDFFTUGens.so
+7f6581cbc000-7f6581cbd000 rwxp 0000a000 08:07 4989065                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDFFTUGens.so
+7f6581cbd000-7f6581cc9000 rwxp 00000000 00:00 0 
+7f6581cc9000-7f6581cd6000 r-xp 00000000 08:07 4989075                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/NCAnalysisUGens.so
+7f6581cd6000-7f6581ed5000 ---p 0000d000 08:07 4989075                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/NCAnalysisUGens.so
+7f6581ed5000-7f6581ed6000 r-xp 0000c000 08:07 4989075                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/NCAnalysisUGens.so
+7f6581ed6000-7f6581ed7000 rwxp 0000d000 08:07 4989075                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/NCAnalysisUGens.so
+7f6581ed7000-7f6581f22000 rwxp 00000000 00:00 0 
+7f6581f22000-7f6581f5c000 r-xp 00000000 08:07 4989056                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshGrainUGens.so
+7f6581f5c000-7f658215b000 ---p 0003a000 08:07 4989056                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshGrainUGens.so
+7f658215b000-7f658215c000 r-xp 00039000 08:07 4989056                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshGrainUGens.so
+7f658215c000-7f658215d000 rwxp 0003a000 08:07 4989056                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshGrainUGens.so
+7f658215d000-7f6582163000 r-xp 00000000 08:07 4989050                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobNoise.so
+7f6582163000-7f6582362000 ---p 00006000 08:07 4989050                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobNoise.so
+7f6582362000-7f6582363000 r-xp 00005000 08:07 4989050                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobNoise.so
+7f6582363000-7f6582364000 rwxp 00006000 08:07 4989050                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobNoise.so
+7f6582364000-7f658236f000 r-xp 00000000 08:07 4989046                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobChaos.so
+7f658236f000-7f658256e000 ---p 0000b000 08:07 4989046                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobChaos.so
+7f658256e000-7f658256f000 r-xp 0000a000 08:07 4989046                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobChaos.so
+7f658256f000-7f6582570000 rwxp 0000b000 08:07 4989046                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobChaos.so
+7f6582570000-7f6582574000 r-xp 00000000 08:07 4989020                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AY_UGen.so
+7f6582574000-7f6582773000 ---p 00004000 08:07 4989020                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AY_UGen.so
+7f6582773000-7f6582774000 r-xp 00003000 08:07 4989020                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AY_UGen.so
+7f6582774000-7f6582775000 rwxp 00004000 08:07 4989020                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AY_UGen.so
+7f6582775000-7f6582777000 rwxp 00000000 00:00 0 
+7f6582777000-7f658277c000 r-xp 00000000 08:07 4989047                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFFT.so
+7f658277c000-7f658297b000 ---p 00005000 08:07 4989047                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFFT.so
+7f658297b000-7f658297c000 r-xp 00004000 08:07 4989047                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFFT.so
+7f658297c000-7f658297d000 rwxp 00005000 08:07 4989047                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFFT.so
+7f658297d000-7f6582989000 rwxp 00000000 00:00 0 
+7f6582989000-7f6582993000 r-xp 00000000 08:07 4989482                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ML_UGens.so
+7f6582993000-7f6582b92000 ---p 0000a000 08:07 4989482                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ML_UGens.so
+7f6582b92000-7f6582b93000 r-xp 00009000 08:07 4989482                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ML_UGens.so
+7f6582b93000-7f6582b9b000 rwxp 0000a000 08:07 4989482                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ML_UGens.so
+7f6582b9b000-7f6582bd7000 rwxp 00000000 00:00 0 
+7f6582bd7000-7f6582bdb000 r-xp 00000000 08:07 4989061                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDBufferUGens.so
+7f6582bdb000-7f6582dda000 ---p 00004000 08:07 4989061                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDBufferUGens.so
+7f6582dda000-7f6582ddb000 r-xp 00003000 08:07 4989061                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDBufferUGens.so
+7f6582ddb000-7f6582ddc000 rwxp 00004000 08:07 4989061                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDBufferUGens.so
+7f6582ddc000-7f6582ddd000 ---p 00000000 00:00 0 
+7f6582ddd000-7f65835dd000 rwxp 00000000 00:00 0                          [stack:32027]
+7f65835dd000-7f65835e0000 r-xp 00000000 08:07 4989472                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DiskIO_UGens.so
+7f65835e0000-7f65837e0000 ---p 00003000 08:07 4989472                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DiskIO_UGens.so
+7f65837e0000-7f65837e1000 r-xp 00003000 08:07 4989472                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DiskIO_UGens.so
+7f65837e1000-7f65837e2000 rwxp 00004000 08:07 4989472                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DiskIO_UGens.so
+7f65837e2000-7f65837e3000 rwxp 00000000 00:00 0 
+7f65837e3000-7f65837e6000 r-xp 00000000 08:07 4989082                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SummerUGens.so
+7f65837e6000-7f65839e6000 ---p 00003000 08:07 4989082                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SummerUGens.so
+7f65839e6000-7f65839e7000 r-xp 00003000 08:07 4989082                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SummerUGens.so
+7f65839e7000-7f65839e8000 rwxp 00004000 08:07 4989082                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SummerUGens.so
+7f65839e8000-7f6583a16000 r-xp 00000000 08:07 4989470                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DelayUGens.so
+7f6583a16000-7f6583c16000 ---p 0002e000 08:07 4989470                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DelayUGens.so
+7f6583c16000-7f6583c17000 r-xp 0002e000 08:07 4989470                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DelayUGens.so
+7f6583c17000-7f6583c18000 rwxp 0002f000 08:07 4989470                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DelayUGens.so
+7f6583c18000-7f6583c1d000 r-xp 00000000 08:07 4989052                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/Concat.so
+7f6583c1d000-7f6583e1c000 ---p 00005000 08:07 4989052                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/Concat.so
+7f6583e1c000-7f6583e1d000 r-xp 00004000 08:07 4989052                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/Concat.so
+7f6583e1d000-7f6583e1e000 rwxp 00005000 08:07 4989052                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/Concat.so
+7f6583e1e000-7f6583e26000 r-xp 00000000 08:07 4989177                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VBAP.so
+7f6583e26000-7f6584025000 ---p 00008000 08:07 4989177                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VBAP.so
+7f6584025000-7f6584026000 r-xp 00007000 08:07 4989177                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VBAP.so
+7f6584026000-7f6584027000 rwxp 00008000 08:07 4989177                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VBAP.so
+7f6584027000-7f658402c000 r-xp 00000000 08:07 4989049                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobGrain.so
+7f658402c000-7f658422c000 ---p 00005000 08:07 4989049                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobGrain.so
+7f658422c000-7f658422d000 r-xp 00005000 08:07 4989049                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobGrain.so
+7f658422d000-7f658422e000 rwxp 00006000 08:07 4989049                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobGrain.so
+7f658422e000-7f658423a000 r-xp 00000000 08:07 4989492                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TriggerUGens.so
+7f658423a000-7f6584439000 ---p 0000c000 08:07 4989492                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TriggerUGens.so
+7f6584439000-7f658443a000 r-xp 0000b000 08:07 4989492                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TriggerUGens.so
+7f658443a000-7f658443b000 rwxp 0000c000 08:07 4989492                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TriggerUGens.so
+7f658443b000-7f658443d000 r-xp 00000000 08:07 4989072                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDTriggeredStatsUgens.so
+7f658443d000-7f658463c000 ---p 00002000 08:07 4989072                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDTriggeredStatsUgens.so
+7f658463c000-7f658463d000 r-xp 00001000 08:07 4989072                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDTriggeredStatsUgens.so
+7f658463d000-7f658463e000 rwxp 00002000 08:07 4989072                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDTriggeredStatsUgens.so
+7f658463e000-7f6584640000 r-xp 00000000 08:07 4989022                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BatPVUgens.so
+7f6584640000-7f658483f000 ---p 00002000 08:07 4989022                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BatPVUgens.so
+7f658483f000-7f6584840000 r-xp 00001000 08:07 4989022                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BatPVUgens.so
+7f6584840000-7f6584841000 rwxp 00002000 08:07 4989022                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BatPVUgens.so
+7f6584841000-7f658484d000 rwxp 00000000 00:00 0 
+7f658484d000-7f6584855000 r-xp 00000000 08:07 4989078                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/RMEQSuite.so
+7f6584855000-7f6584a54000 ---p 00008000 08:07 4989078                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/RMEQSuite.so
+7f6584a54000-7f6584a55000 r-xp 00007000 08:07 4989078                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/RMEQSuite.so
+7f6584a55000-7f6584a56000 rwxp 00008000 08:07 4989078                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/RMEQSuite.so
+7f6584a56000-7f6584a6c000 r-xp 00000000 08:07 4989048                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFilt.so
+7f6584a6c000-7f6584c6b000 ---p 00016000 08:07 4989048                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFilt.so
+7f6584c6b000-7f6584c6c000 r-xp 00015000 08:07 4989048                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFilt.so
+7f6584c6c000-7f6584c6d000 rwxp 00016000 08:07 4989048                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFilt.so
+7f6584c6d000-7f6584c70000 r-xp 00000000 08:07 4989073                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MdaUGens.so
+7f6584c70000-7f6584e6f000 ---p 00003000 08:07 4989073                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MdaUGens.so
+7f6584e6f000-7f6584e70000 r-xp 00002000 08:07 4989073        

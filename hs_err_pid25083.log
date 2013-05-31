@@ -1,0 +1,1080 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f42547eeffa, pid=25083, tid=139920704259840
+#
+# JRE version: 6.0_38-b05
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (20.13-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libxcb.so.1+0x9ffa]  long long+0x1a
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x0000000000000000
+
+Registers:
+RAX=0x00007f42551517a0, RBX=0x0000000000000000, RCX=0x0000000000000001, RDX=0x0000000000000003
+RSP=0x00007f41d3dfbd10, RBP=0x0000000000000000, RSI=0x00007f41d3dfbd60, RDI=0x0000000000000000
+R8 =0x0000000000000000, R9 =0x0000000000000000, R10=0x0000000000000000, R11=0x0000000000000000
+R12=0x00007f41d3dfbd60, R13=0x00007f41d3dfbd90, R14=0x00007f41e8000bf0, R15=0x0000000000000000
+RIP=0x00007f42547eeffa, EFLAGS=0x0000000000010202, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f41d3dfbd10)
+0x00007f41d3dfbd10:   00007f41e8001fd0 00007f42547f0840
+0x00007f41d3dfbd20:   ffffffffffffffff 0000000000000000
+0x00007f41d3dfbd30:   0000000000000000 00007f41d3dfbd60
+0x00007f41d3dfbd40:   00007f41d3dfbd90 00007f4254e5ae3e
+0x00007f41d3dfbd50:   0000000000000000 0000000000000001
+0x00007f41d3dfbd60:   00007f41e8007650 0000000000000004
+0x00007f41d3dfbd70:   0000000000000000 0000000000000000
+0x00007f41d3dfbd80:   00007f42551517a0 0000000000000000
+0x00007f41d3dfbd90:   00007f41e8013bc0 00007f41e8000bf0
+0x00007f41d3dfbda0:   00007f41d3fff080 0000000000000000
+0x00007f41d3dfbdb0:   00007f4264306060 0000000000000000
+0x00007f41d3dfbdc0:   00007f41d3dfbe30 00007f4254e5b317
+0x00007f41d3dfbdd0:   000000000000006b 0000000100000002
+0x00007f41d3dfbde0:   0000000000000000 0000000000000000
+0x00007f41d3dfbdf0:   0000000000000000 00007f41e8000bf0
+0x00007f41d3dfbe00:   00007f41d3fff080 0000000000000000
+0x00007f41d3dfbe10:   00007f4264306060 00007f4263ed7740
+0x00007f41d3dfbe20:   0000000000001000 00007f4254e511a1
+0x00007f41d3dfbe30:   00000002b7eb0001 0000000000000000
+0x00007f41d3dfbe40:   0000000000000000 0000000000000000
+0x00007f41d3dfbe50:   0000000000000000 61de627a58a26700
+0x00007f41d3dfbe60:   00007f4264306060 00007f41d3fff080
+0x00007f41d3dfbe70:   0000000000000000 00007f41d3dfdbe8
+0x00007f41d3dfbe80:   0000000000000000 0000000001036640
+0x00007f41d3dfbe90:   0000000000000000 0000000000000000
+0x00007f41d3dfbea0:   0000000000000000 00007f4263ecdf8e
+0x00007f41d3dfbeb0:   0000000000000000 00007f41d3dfc700
+0x00007f41d3dfbec0:   00007f41d3dfc700 d88120eeb2daa386
+0x00007f41d3dfbed0:   0000000000000000 00007f4264306060
+0x00007f41d3dfbee0:   00007f4263ed7740 0000000000001000
+0x00007f41d3dfbef0:   26028751cfbaa386 2605e7370c74a386
+0x00007f41d3dfbf00:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x00007f42547eeffa)
+0x00007f42547eefda:   eb bb 0f 1f 40 00 48 89 5c 24 e0 48 89 6c 24 e8
+0x00007f42547eefea:   31 ed 4c 89 64 24 f0 4c 89 6c 24 f8 48 83 ec 38
+0x00007f42547eeffa:   44 8b 17 48 89 fb 45 85 d2 75 38 4c 8d 6f 18 49
+0x00007f42547ef00a:   89 cc 89 14 24 48 89 74 24 08 4c 89 ef e8 f4 f3 
+
+Register to memory mapping:
+
+RAX=0x00007f42551517a0: <offset 0x3397a0> in /usr/lib/x86_64-linux-gnu/libX11.so.6 at 0x00007f4254e18000
+RBX=0x0000000000000000 is an unknown value
+RCX=0x0000000000000001 is an unknown value
+RDX=0x0000000000000003 is an unknown value
+RSP=0x00007f41d3dfbd10 is an unknown value
+RBP=0x0000000000000000 is an unknown value
+RSI=0x00007f41d3dfbd60 is an unknown value
+RDI=0x0000000000000000 is an unknown value
+R8 =0x0000000000000000 is an unknown value
+R9 =0x0000000000000000 is an unknown value
+R10=0x0000000000000000 is an unknown value
+R11=0x0000000000000000 is an unknown value
+R12=0x00007f41d3dfbd60 is an unknown value
+R13=0x00007f41d3dfbd90 is an unknown value
+R14=0x00007f41e8000bf0 is an unknown value
+R15=0x0000000000000000 is an unknown value
+
+
+Stack: [0x00007f41d35fc000,0x00007f41d3dfd000],  sp=0x00007f41d3dfbd10,  free space=8191k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libxcb.so.1+0x9ffa]  long long+0x1a
+
+[error occurred during error reporting (printing native stack), id 0xb]
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:at safepoint (shutting down)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007f425c006bb0] Threads_lock - owner thread: 0x00007f425c067800
+
+Heap
+ PSYoungGen      total 291328K, used 80210K [0x00000000ebf60000, 0x00000000ffa20000, 0x0000000100000000)
+  eden space 289024K, 26% used [0x00000000ebf60000,0x00000000f0b7c9c0,0x00000000fd9a0000)
+  from space 2304K, 98% used [0x00000000ff7e0000,0x00000000ffa18000,0x00000000ffa20000)
+  to   space 4736K, 0% used [0x00000000ff0e0000,0x00000000ff0e0000,0x00000000ff580000)
+ PSOldGen        total 65088K, used 39971K [0x00000000c3e00000, 0x00000000c7d90000, 0x00000000ebf60000)
+  object space 65088K, 61% used [0x00000000c3e00000,0x00000000c6508d20,0x00000000c7d90000)
+ PSPermGen       total 83968K, used 60800K [0x00000000bec00000, 0x00000000c3e00000, 0x00000000c3e00000)
+  object space 83968K, 72% used [0x00000000bec00000,0x00000000c27603c8,0x00000000c3e00000)
+
+Code Cache  [0x00007f4256000000, 0x00007f42567c0000, 0x00007f425c000000)
+ total_blobs=3686 nmethods=3190 adapters=429 free_code_cache=92592256 largest_free_block=448
+
+Dynamic libraries:
+40000000-40009000 r-xp 00000000 08:07 1730159                            /usr/lib/jvm/java-6-sun-1.6.0.38/jre/bin/java
+40108000-4010a000 rwxp 00008000 08:07 1730159                            /usr/lib/jvm/java-6-sun-1.6.0.38/jre/bin/java
+40dcc000-40ded000 rwxp 00000000 00:00 0                                  [heap]
+bec00000-c3e00000 rwxp 00000000 00:00 0 
+c3e00000-c7d90000 rwxp 00000000 00:00 0 
+c7d90000-ebf60000 rwxp 00000000 00:00 0 
+ebf60000-ffa20000 rwxp 00000000 00:00 0 
+ffa20000-100000000 ---p 00000000 00:00 0 
+7f41a7dd2000-7f41a7dd5000 ---p 00000000 00:00 0 
+7f41a7dd5000-7f41a7ed3000 rwxp 00000000 00:00 0                          [stack:25962]
+7f41a7ed3000-7f41a7ed6000 ---p 00000000 00:00 0 
+7f41a7ed6000-7f41a7fd4000 rwxp 00000000 00:00 0 
+7f41b6c79000-7f41b6c7c000 ---p 00000000 00:00 0 
+7f41b6c7c000-7f41b6d7a000 rwxp 00000000 00:00 0                          [stack:25975]
+7f41b6d7a000-7f41b6d7b000 ---p 00000000 00:00 0 
+7f41b6d7b000-7f41b6dfb000 rwxp 00000000 00:00 0 
+7f41bbc72000-7f41bbc73000 ---p 00000000 00:00 0 
+7f41bbc73000-7f41bbcf3000 rwxp 00000000 00:00 0 
+7f41bbcf3000-7f41bbcf6000 ---p 00000000 00:00 0 
+7f41bbcf6000-7f41bc4f4000 rwxp 00000000 00:00 0 
+7f41cc4f5000-7f41cc5b7000 r-xp 00000000 08:07 4989081                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/StkUGens.so
+7f41cc5b7000-7f41cc7b6000 ---p 000c2000 08:07 4989081                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/StkUGens.so
+7f41cc7b6000-7f41cc7ba000 r-xp 000c1000 08:07 4989081                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/StkUGens.so
+7f41cc7ba000-7f41cc7bf000 rwxp 000c5000 08:07 4989081                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/StkUGens.so
+7f41cc7bf000-7f41cc7cd000 r-xp 00000000 08:07 4989079                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SLUGens.so
+7f41cc7cd000-7f41cc9cc000 ---p 0000e000 08:07 4989079                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SLUGens.so
+7f41cc9cc000-7f41cc9cd000 r-xp 0000d000 08:07 4989079                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SLUGens.so
+7f41cc9cd000-7f41cc9ce000 rwxp 0000e000 08:07 4989079                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SLUGens.so
+7f41cc9ce000-7f41cc9d1000 r-xp 00000000 08:07 4989178                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VOSIM.so
+7f41cc9d1000-7f41ccbd0000 ---p 00003000 08:07 4989178                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VOSIM.so
+7f41ccbd0000-7f41ccbd1000 r-xp 00002000 08:07 4989178                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VOSIM.so
+7f41ccbd1000-7f41ccbd2000 rwxp 00003000 08:07 4989178                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VOSIM.so
+7f41ccbd2000-7f41ccbd8000 r-xp 00000000 08:07 4989024                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BBCut2UGens.so
+7f41ccbd8000-7f41ccdd7000 ---p 00006000 08:07 4989024                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BBCut2UGens.so
+7f41ccdd7000-7f41ccdd8000 r-xp 00005000 08:07 4989024                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BBCut2UGens.so
+7f41ccdd8000-7f41ccdda000 rwxp 00006000 08:07 4989024                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BBCut2UGens.so
+7f41ccdda000-7f41ccddc000 r-xp 00000000 08:07 4989069                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDPollUGens.so
+7f41ccddc000-7f41ccfdb000 ---p 00002000 08:07 4989069                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDPollUGens.so
+7f41ccfdb000-7f41ccfdc000 r-xp 00001000 08:07 4989069                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDPollUGens.so
+7f41ccfdc000-7f41ccfdd000 rwxp 00002000 08:07 4989069                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDPollUGens.so
+7f41ccfdd000-7f41ccfdf000 r-xp 00000000 08:07 4989491                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TestUGens.so
+7f41ccfdf000-7f41cd1de000 ---p 00002000 08:07 4989491                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TestUGens.so
+7f41cd1de000-7f41cd1df000 r-xp 00001000 08:07 4989491                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TestUGens.so
+7f41cd1df000-7f41cd1e0000 rwxp 00002000 08:07 4989491                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TestUGens.so
+7f41cd1e0000-7f41cd1ea000 r-xp 00000000 08:07 4989065                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDFFTUGens.so
+7f41cd1ea000-7f41cd3e9000 ---p 0000a000 08:07 4989065                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDFFTUGens.so
+7f41cd3e9000-7f41cd3ea000 r-xp 00009000 08:07 4989065                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDFFTUGens.so
+7f41cd3ea000-7f41cd3eb000 rwxp 0000a000 08:07 4989065                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDFFTUGens.so
+7f41cd3eb000-7f41cd3f7000 rwxp 00000000 00:00 0 
+7f41cd3f7000-7f41cd404000 r-xp 00000000 08:07 4989075                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/NCAnalysisUGens.so
+7f41cd404000-7f41cd603000 ---p 0000d000 08:07 4989075                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/NCAnalysisUGens.so
+7f41cd603000-7f41cd604000 r-xp 0000c000 08:07 4989075                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/NCAnalysisUGens.so
+7f41cd604000-7f41cd605000 rwxp 0000d000 08:07 4989075                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/NCAnalysisUGens.so
+7f41cd605000-7f41cd650000 rwxp 00000000 00:00 0 
+7f41cd650000-7f41cd68a000 r-xp 00000000 08:07 4989056                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshGrainUGens.so
+7f41cd68a000-7f41cd889000 ---p 0003a000 08:07 4989056                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshGrainUGens.so
+7f41cd889000-7f41cd88a000 r-xp 00039000 08:07 4989056                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshGrainUGens.so
+7f41cd88a000-7f41cd88b000 rwxp 0003a000 08:07 4989056                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshGrainUGens.so
+7f41cd88b000-7f41cd891000 r-xp 00000000 08:07 4989050                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobNoise.so
+7f41cd891000-7f41cda90000 ---p 00006000 08:07 4989050                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobNoise.so
+7f41cda90000-7f41cda91000 r-xp 00005000 08:07 4989050                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobNoise.so
+7f41cda91000-7f41cda92000 rwxp 00006000 08:07 4989050                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobNoise.so
+7f41cda92000-7f41cda9d000 r-xp 00000000 08:07 4989046                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobChaos.so
+7f41cda9d000-7f41cdc9c000 ---p 0000b000 08:07 4989046                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobChaos.so
+7f41cdc9c000-7f41cdc9d000 r-xp 0000a000 08:07 4989046                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobChaos.so
+7f41cdc9d000-7f41cdc9e000 rwxp 0000b000 08:07 4989046                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobChaos.so
+7f41cdc9e000-7f41cdca2000 r-xp 00000000 08:07 4989020                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AY_UGen.so
+7f41cdca2000-7f41cdea1000 ---p 00004000 08:07 4989020                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AY_UGen.so
+7f41cdea1000-7f41cdea2000 r-xp 00003000 08:07 4989020                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AY_UGen.so
+7f41cdea2000-7f41cdea3000 rwxp 00004000 08:07 4989020                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AY_UGen.so
+7f41cdea3000-7f41cdea5000 rwxp 00000000 00:00 0 
+7f41cdea5000-7f41cdeaa000 r-xp 00000000 08:07 4989047                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFFT.so
+7f41cdeaa000-7f41ce0a9000 ---p 00005000 08:07 4989047                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFFT.so
+7f41ce0a9000-7f41ce0aa000 r-xp 00004000 08:07 4989047                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFFT.so
+7f41ce0aa000-7f41ce0ab000 rwxp 00005000 08:07 4989047                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFFT.so
+7f41ce0ab000-7f41ce0b7000 rwxp 00000000 00:00 0 
+7f41ce0b7000-7f41ce0c1000 r-xp 00000000 08:07 4989482                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ML_UGens.so
+7f41ce0c1000-7f41ce2c0000 ---p 0000a000 08:07 4989482                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ML_UGens.so
+7f41ce2c0000-7f41ce2c1000 r-xp 00009000 08:07 4989482                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ML_UGens.so
+7f41ce2c1000-7f41ce2c9000 rwxp 0000a000 08:07 4989482                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ML_UGens.so
+7f41ce2c9000-7f41ce305000 rwxp 00000000 00:00 0 
+7f41ce305000-7f41ce309000 r-xp 00000000 08:07 4989061                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDBufferUGens.so
+7f41ce309000-7f41ce508000 ---p 00004000 08:07 4989061                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDBufferUGens.so
+7f41ce508000-7f41ce509000 r-xp 00003000 08:07 4989061                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDBufferUGens.so
+7f41ce509000-7f41ce50a000 rwxp 00004000 08:07 4989061                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDBufferUGens.so
+7f41ce50a000-7f41ce50b000 ---p 00000000 00:00 0 
+7f41ce50b000-7f41ced0b000 rwxp 00000000 00:00 0                          [stack:25165]
+7f41ced0b000-7f41ced0e000 r-xp 00000000 08:07 4989472                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DiskIO_UGens.so
+7f41ced0e000-7f41cef0e000 ---p 00003000 08:07 4989472                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DiskIO_UGens.so
+7f41cef0e000-7f41cef0f000 r-xp 00003000 08:07 4989472                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DiskIO_UGens.so
+7f41cef0f000-7f41cef10000 rwxp 00004000 08:07 4989472                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DiskIO_UGens.so
+7f41cef10000-7f41cef11000 rwxp 00000000 00:00 0 
+7f41cef11000-7f41cef14000 r-xp 00000000 08:07 4989082                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SummerUGens.so
+7f41cef14000-7f41cf114000 ---p 00003000 08:07 4989082                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SummerUGens.so
+7f41cf114000-7f41cf115000 r-xp 00003000 08:07 4989082                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SummerUGens.so
+7f41cf115000-7f41cf116000 rwxp 00004000 08:07 4989082                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/SummerUGens.so
+7f41cf116000-7f41cf144000 r-xp 00000000 08:07 4989470                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DelayUGens.so
+7f41cf144000-7f41cf344000 ---p 0002e000 08:07 4989470                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DelayUGens.so
+7f41cf344000-7f41cf345000 r-xp 0002e000 08:07 4989470                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DelayUGens.so
+7f41cf345000-7f41cf346000 rwxp 0002f000 08:07 4989470                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DelayUGens.so
+7f41cf346000-7f41cf34b000 r-xp 00000000 08:07 4989052                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/Concat.so
+7f41cf34b000-7f41cf54a000 ---p 00005000 08:07 4989052                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/Concat.so
+7f41cf54a000-7f41cf54b000 r-xp 00004000 08:07 4989052                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/Concat.so
+7f41cf54b000-7f41cf54c000 rwxp 00005000 08:07 4989052                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/Concat.so
+7f41cf54c000-7f41cf554000 r-xp 00000000 08:07 4989177                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VBAP.so
+7f41cf554000-7f41cf753000 ---p 00008000 08:07 4989177                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VBAP.so
+7f41cf753000-7f41cf754000 r-xp 00007000 08:07 4989177                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VBAP.so
+7f41cf754000-7f41cf755000 rwxp 00008000 08:07 4989177                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/VBAP.so
+7f41cf755000-7f41cf75a000 r-xp 00000000 08:07 4989049                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobGrain.so
+7f41cf75a000-7f41cf95a000 ---p 00005000 08:07 4989049                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobGrain.so
+7f41cf95a000-7f41cf95b000 r-xp 00005000 08:07 4989049                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobGrain.so
+7f41cf95b000-7f41cf95c000 rwxp 00006000 08:07 4989049                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobGrain.so
+7f41cf95c000-7f41cf968000 r-xp 00000000 08:07 4989492                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TriggerUGens.so
+7f41cf968000-7f41cfb67000 ---p 0000c000 08:07 4989492                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TriggerUGens.so
+7f41cfb67000-7f41cfb68000 r-xp 0000b000 08:07 4989492                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TriggerUGens.so
+7f41cfb68000-7f41cfb69000 rwxp 0000c000 08:07 4989492                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TriggerUGens.so
+7f41cfb69000-7f41cfb6b000 r-xp 00000000 08:07 4989072                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDTriggeredStatsUgens.so
+7f41cfb6b000-7f41cfd6a000 ---p 00002000 08:07 4989072                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDTriggeredStatsUgens.so
+7f41cfd6a000-7f41cfd6b000 r-xp 00001000 08:07 4989072                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDTriggeredStatsUgens.so
+7f41cfd6b000-7f41cfd6c000 rwxp 00002000 08:07 4989072                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDTriggeredStatsUgens.so
+7f41cfd6c000-7f41cfd6e000 r-xp 00000000 08:07 4989022                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BatPVUgens.so
+7f41cfd6e000-7f41cff6d000 ---p 00002000 08:07 4989022                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BatPVUgens.so
+7f41cff6d000-7f41cff6e000 r-xp 00001000 08:07 4989022                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BatPVUgens.so
+7f41cff6e000-7f41cff6f000 rwxp 00002000 08:07 4989022                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BatPVUgens.so
+7f41cff6f000-7f41cff7b000 rwxp 00000000 00:00 0 
+7f41cff7b000-7f41cff83000 r-xp 00000000 08:07 4989078                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/RMEQSuite.so
+7f41cff83000-7f41d0182000 ---p 00008000 08:07 4989078                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/RMEQSuite.so
+7f41d0182000-7f41d0183000 r-xp 00007000 08:07 4989078                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/RMEQSuite.so
+7f41d0183000-7f41d0184000 rwxp 00008000 08:07 4989078                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/RMEQSuite.so
+7f41d0184000-7f41d019a000 r-xp 00000000 08:07 4989048                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFilt.so
+7f41d019a000-7f41d0399000 ---p 00016000 08:07 4989048                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFilt.so
+7f41d0399000-7f41d039a000 r-xp 00015000 08:07 4989048                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFilt.so
+7f41d039a000-7f41d039b000 rwxp 00016000 08:07 4989048                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BhobFilt.so
+7f41d039b000-7f41d039e000 r-xp 00000000 08:07 4989073                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MdaUGens.so
+7f41d039e000-7f41d059d000 ---p 00003000 08:07 4989073                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MdaUGens.so
+7f41d059d000-7f41d059e000 r-xp 00002000 08:07 4989073                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MdaUGens.so
+7f41d059e000-7f41d06bd000 rwxp 00003000 08:07 4989073                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MdaUGens.so
+7f41d06bd000-7f41d06c3000 r-xp 00000000 08:07 4989484                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MulAddUGens.so
+7f41d06c3000-7f41d08c2000 ---p 00006000 08:07 4989484                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MulAddUGens.so
+7f41d08c2000-7f41d08c3000 r-xp 00005000 08:07 4989484                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MulAddUGens.so
+7f41d08c3000-7f41d08c4000 rwxp 00006000 08:07 4989484                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MulAddUGens.so
+7f41d08c4000-7f41d08ca000 r-xp 00000000 08:07 4989490                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ReverbUGens.so
+7f41d08ca000-7f41d0ac9000 ---p 00006000 08:07 4989490                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ReverbUGens.so
+7f41d0ac9000-7f41d0aca000 r-xp 00005000 08:07 4989490                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ReverbUGens.so
+7f41d0aca000-7f41d0acb000 rwxp 00006000 08:07 4989490                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ReverbUGens.so
+7f41d0acb000-7f41d0ade000 r-xp 00000000 08:07 4989057                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshPVUGens.so
+7f41d0ade000-7f41d0cdd000 ---p 00013000 08:07 4989057                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshPVUGens.so
+7f41d0cdd000-7f41d0cde000 r-xp 00012000 08:07 4989057                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshPVUGens.so
+7f41d0cde000-7f41d0cdf000 rwxp 00013000 08:07 4989057                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshPVUGens.so
+7f41d0cdf000-7f41d0ceb000 rwxp 00000000 00:00 0 
+7f41d0ceb000-7f41d0cf2000 r-xp 00000000 08:07 4989045                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BetablockerUGens.so
+7f41d0cf2000-7f41d0ef1000 ---p 00007000 08:07 4989045                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BetablockerUGens.so
+7f41d0ef1000-7f41d0ef2000 r-xp 00006000 08:07 4989045                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BetablockerUGens.so
+7f41d0ef2000-7f41d0ef3000 rwxp 00007000 08:07 4989045                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BetablockerUGens.so
+7f41d0ef3000-7f41d0eff000 r-xp 00000000 08:07 4989474                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/FFT_UGens.so
+7f41d0eff000-7f41d10ff000 ---p 0000c000 08:07 4989474                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/FFT_UGens.so
+7f41d10ff000-7f41d1100000 r-xp 0000c000 08:07 4989474                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/FFT_UGens.so
+7f41d1100000-7f41d1101000 rwxp 0000d000 08:07 4989474                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/FFT_UGens.so
+7f41d1101000-7f41d1131000 rwxp 00000000 00:00 0 
+7f41d1131000-7f41d1142000 r-xp 00000000 08:07 4989486                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/OscUGens.so
+7f41d1142000-7f41d1341000 ---p 00011000 08:07 4989486                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/OscUGens.so
+7f41d1341000-7f41d1342000 r-xp 00010000 08:07 4989486                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/OscUGens.so
+7f41d1342000-7f41d1343000 rwxp 00011000 08:07 4989486                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/OscUGens.so
+7f41d1343000-7f41d1348000 r-xp 00000000 08:07 4989063                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDChaosUGens.so
+7f41d1348000-7f41d1547000 ---p 00005000 08:07 4989063                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDChaosUGens.so
+7f41d1547000-7f41d1548000 r-xp 00004000 08:07 4989063                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDChaosUGens.so
+7f41d1548000-7f41d1549000 rwxp 00005000 08:07 4989063                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDChaosUGens.so
+7f41d1549000-7f41d1564000 r-xp 00000000 08:07 4989019                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AtkUGens.so
+7f41d1564000-7f41d1764000 ---p 0001b000 08:07 4989019                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AtkUGens.so
+7f41d1764000-7f41d1765000 r-xp 0001b000 08:07 4989019                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AtkUGens.so
+7f41d1765000-7f41d1766000 rwxp 0001c000 08:07 4989019                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AtkUGens.so
+7f41d1766000-7f41d1778000 r-xp 00000000 08:07 4989044                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BerlachUGens.so
+7f41d1778000-7f41d1977000 ---p 00012000 08:07 4989044                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BerlachUGens.so
+7f41d1977000-7f41d1978000 r-xp 00011000 08:07 4989044                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BerlachUGens.so
+7f41d1978000-7f41d1979000 rwxp 00012000 08:07 4989044                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BerlachUGens.so
+7f41d1979000-7f41d1989000 r-xp 00000000 08:07 4989055                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshAmbiUGens.so
+7f41d1989000-7f41d1b88000 ---p 00010000 08:07 4989055                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshAmbiUGens.so
+7f41d1b88000-7f41d1b89000 r-xp 0000f000 08:07 4989055                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshAmbiUGens.so
+7f41d1b89000-7f41d1b8a000 rwxp 00010000 08:07 4989055                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshAmbiUGens.so
+7f41d1b8a000-7f41d1b8c000 r-xp 00000000 08:07 4989077                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/RFWUGens.so
+7f41d1b8c000-7f41d1d8b000 ---p 00002000 08:07 4989077                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/RFWUGens.so
+7f41d1d8b000-7f41d1d8c000 r-xp 00001000 08:07 4989077                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/RFWUGens.so
+7f41d1d8c000-7f41d1d8d000 rwxp 00002000 08:07 4989077                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/RFWUGens.so
+7f41d1d8d000-7f41d1d91000 r-xp 00000000 08:07 4989018                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AmbisonicUGens.so
+7f41d1d91000-7f41d1f91000 ---p 00004000 08:07 4989018                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AmbisonicUGens.so
+7f41d1f91000-7f41d1f92000 r-xp 00004000 08:07 4989018                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AmbisonicUGens.so
+7f41d1f92000-7f41d1f93000 rwxp 00005000 08:07 4989018                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/AmbisonicUGens.so
+7f41d1f93000-7f41d1fa5000 r-xp 00000000 08:07 4989480                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/LFUGens.so
+7f41d1fa5000-7f41d21a5000 ---p 00012000 08:07 4989480                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/LFUGens.so
+7f41d21a5000-7f41d21a6000 r-xp 00012000 08:07 4989480                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/LFUGens.so
+7f41d21a6000-7f41d21a7000 rwxp 00013000 08:07 4989480                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/LFUGens.so
+7f41d21a7000-7f41d21aa000 r-xp 00000000 08:07 4989053                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DistortionUGens.so
+7f41d21aa000-7f41d23a9000 ---p 00003000 08:07 4989053                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DistortionUGens.so
+7f41d23a9000-7f41d23aa000 r-xp 00002000 08:07 4989053                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DistortionUGens.so
+7f41d23aa000-7f41d23ab000 rwxp 00003000 08:07 4989053                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DistortionUGens.so
+7f41d23ab000-7f41d23b3000 r-xp 00000000 08:07 4989176                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TJUGens.so
+7f41d23b3000-7f41d25b2000 ---p 00008000 08:07 4989176                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TJUGens.so
+7f41d25b2000-7f41d25b3000 r-xp 00007000 08:07 4989176                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TJUGens.so
+7f41d25b3000-7f41d25b4000 rwxp 00008000 08:07 4989176                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TJUGens.so
+7f41d25b4000-7f41d25b6000 r-xp 00000000 08:07 4989488                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PhysicalModelingUGens.so
+7f41d25b6000-7f41d27b5000 ---p 00002000 08:07 4989488                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PhysicalModelingUGens.so
+7f41d27b5000-7f41d27b6000 r-xp 00001000 08:07 4989488                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PhysicalModelingUGens.so
+7f41d27b6000-7f41d27b7000 rwxp 00002000 08:07 4989488                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PhysicalModelingUGens.so
+7f41d27b7000-7f41d27bd000 r-xp 00000000 08:07 4989478                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/IOUGens.so
+7f41d27bd000-7f41d29bd000 ---p 00006000 08:07 4989478                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/IOUGens.so
+7f41d29bd000-7f41d29be000 r-xp 00006000 08:07 4989478                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/IOUGens.so
+7f41d29be000-7f41d29bf000 rwxp 00007000 08:07 4989478                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/IOUGens.so
+7f41d29bf000-7f41d29c3000 r-xp 00000000 08:07 4989023                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BatUGens.so
+7f41d29c3000-7f41d2bc2000 ---p 00004000 08:07 4989023                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BatUGens.so
+7f41d2bc2000-7f41d2bc3000 r-xp 00003000 08:07 4989023                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BatUGens.so
+7f41d2bc3000-7f41d2bc4000 rwxp 00004000 08:07 4989023                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BatUGens.so
+7f41d2bc4000-7f41d2bd7000 r-xp 00000000 08:07 4989493                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/UnaryOpUGens.so
+7f41d2bd7000-7f41d2dd7000 ---p 00013000 08:07 4989493                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/UnaryOpUGens.so
+7f41d2dd7000-7f41d2dd8000 r-xp 00013000 08:07 4989493                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/UnaryOpUGens.so
+7f41d2dd8000-7f41d2dd9000 rwxp 00014000 08:07 4989493                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/UnaryOpUGens.so
+7f41d2dd9000-7f41d2de0000 r-xp 00000000 08:07 4989469                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ChaosUGens.so
+7f41d2de0000-7f41d2fdf000 ---p 00007000 08:07 4989469                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ChaosUGens.so
+7f41d2fdf000-7f41d2fe0000 r-xp 00006000 08:07 4989469                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ChaosUGens.so
+7f41d2fe0000-7f41d2fe1000 rwxp 00007000 08:07 4989469                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/ChaosUGens.so
+7f41d2fe1000-7f41d2fe4000 r-xp 00000000 08:07 4989060                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/LoopBuf.so
+7f41d2fe4000-7f41d31e3000 ---p 00003000 08:07 4989060                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/LoopBuf.so
+7f41d31e3000-7f41d31e4000 r-xp 00002000 08:07 4989060                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/LoopBuf.so
+7f41d31e4000-7f41d31e5000 rwxp 00003000 08:07 4989060                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/LoopBuf.so
+7f41d31e5000-7f41d31e8000 r-xp 00000000 08:07 4989062                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDCepstrumUGens.so
+7f41d31e8000-7f41d33e7000 ---p 00003000 08:07 4989062                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDCepstrumUGens.so
+7f41d33e7000-7f41d33e8000 r-xp 00002000 08:07 4989062                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDCepstrumUGens.so
+7f41d33e8000-7f41d33e9000 rwxp 00003000 08:07 4989062                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDCepstrumUGens.so
+7f41d33e9000-7f41d33f5000 rwxp 00000000 00:00 0 
+7f41d33f5000-7f41d33fb000 r-xp 00000000 08:07 4989485                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/NoiseUGens.so
+7f41d33fb000-7f41d35fa000 ---p 00006000 08:07 4989485                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/NoiseUGens.so
+7f41d35fa000-7f41d35fb000 r-xp 00005000 08:07 4989485                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/NoiseUGens.so
+7f41d35fb000-7f41d35fc000 rwxp 00006000 08:07 4989485                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/NoiseUGens.so
+7f41d35fc000-7f41d35fd000 ---p 00000000 00:00 0 
+7f41d35fd000-7f41d3dfd000 rwxp 00000000 00:00 0                          [stack:25164]
+7f41d3dfd000-7f41d3dfe000 r-xp 00000000 08:07 4989479                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/KeyboardUGens.so
+7f41d3dfe000-7f41d3ffe000 ---p 00001000 08:07 4989479                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/KeyboardUGens.so
+7f41d3ffe000-7f41d3fff000 r-xp 00001000 08:07 4989479                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/KeyboardUGens.so
+7f41d3fff000-7f41d4000000 rwxp 00002000 08:07 4989479                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/KeyboardUGens.so
+7f41d4000000-7f41d4021000 rwxp 00000000 00:00 0 
+7f41d4021000-7f41d8000000 ---p 00000000 00:00 0 
+7f41d8045000-7f41d8048000 r-xp 00000000 08:07 4989074                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MembraneUGens.so
+7f41d8048000-7f41d8247000 ---p 00003000 08:07 4989074                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MembraneUGens.so
+7f41d8247000-7f41d8248000 r-xp 00002000 08:07 4989074                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MembraneUGens.so
+7f41d8248000-7f41d8249000 rwxp 00003000 08:07 4989074                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MembraneUGens.so
+7f41d8249000-7f41d824a000 ---p 00000000 00:00 0 
+7f41d824a000-7f41d8a4a000 rwxp 00000000 00:00 0                          [stack:25163]
+7f41d8a4a000-7f41d8a4d000 r-xp 00000000 08:07 4989483                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MouseUGens.so
+7f41d8a4d000-7f41d8c4c000 ---p 00003000 08:07 4989483                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MouseUGens.so
+7f41d8c4c000-7f41d8c4d000 r-xp 00002000 08:07 4989483                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MouseUGens.so
+7f41d8c4d000-7f41d8c4e000 rwxp 00003000 08:07 4989483                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MouseUGens.so
+7f41d8c4e000-7f41d8c5a000 r-xp 00000000 08:07 4989076                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PitchDetection.so
+7f41d8c5a000-7f41d8e59000 ---p 0000c000 08:07 4989076                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PitchDetection.so
+7f41d8e59000-7f41d8e5a000 r-xp 0000b000 08:07 4989076                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PitchDetection.so
+7f41d8e5a000-7f41d8e5b000 rwxp 0000c000 08:07 4989076                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PitchDetection.so
+7f41d8e5b000-7f41d8e5f000 r-xp 00000000 08:07 4989083                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TagSystemUgens.so
+7f41d8e5f000-7f41d905e000 ---p 00004000 08:07 4989083                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TagSystemUgens.so
+7f41d905e000-7f41d905f000 r-xp 00003000 08:07 4989083                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TagSystemUgens.so
+7f41d905f000-7f41d9060000 rwxp 00004000 08:07 4989083                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/TagSystemUgens.so
+7f41d9060000-7f41d9068000 r-xp 00000000 08:07 4989487                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PanUGens.so
+7f41d9068000-7f41d9267000 ---p 00008000 08:07 4989487                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PanUGens.so
+7f41d9267000-7f41d9268000 r-xp 00007000 08:07 4989487                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PanUGens.so
+7f41d9268000-7f41d9269000 rwxp 00008000 08:07 4989487                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PanUGens.so
+7f41d9269000-7f41d926c000 r-xp 00000000 08:07 4989071                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDTreeUGens.so
+7f41d926c000-7f41d946b000 ---p 00003000 08:07 4989071                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDTreeUGens.so
+7f41d946b000-7f41d946c000 r-xp 00002000 08:07 4989071                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDTreeUGens.so
+7f41d946c000-7f41d946d000 rwxp 00003000 08:07 4989071                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDTreeUGens.so
+7f41d946d000-7f41d9489000 r-xp 00000000 08:07 4989475                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/FilterUGens.so
+7f41d9489000-7f41d9688000 ---p 0001c000 08:07 4989475                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/FilterUGens.so
+7f41d9688000-7f41d9689000 r-xp 0001b000 08:07 4989475                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/FilterUGens.so
+7f41d9689000-7f41d968a000 rwxp 0001c000 08:07 4989475                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/FilterUGens.so
+7f41d968a000-7f41d968d000 r-xp 00000000 08:07 4989476                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/GendynUGens.so
+7f41d968d000-7f41d988c000 ---p 00003000 08:07 4989476                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/GendynUGens.so
+7f41d988c000-7f41d988d000 r-xp 00002000 08:07 4989476                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/GendynUGens.so
+7f41d988d000-7f41d988e000 rwxp 00003000 08:07 4989476                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/GendynUGens.so
+7f41d988e000-7f41d9890000 r-xp 00000000 08:07 4989064                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDDistortionUGens.so
+7f41d9890000-7f41d9a8f000 ---p 00002000 08:07 4989064                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDDistortionUGens.so
+7f41d9a8f000-7f41d9a90000 r-xp 00001000 08:07 4989064                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDDistortionUGens.so
+7f41d9a90000-7f41d9a91000 rwxp 00002000 08:07 4989064                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDDistortionUGens.so
+7f41d9a91000-7f41d9a95000 r-xp 00000000 08:07 4989070                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDSOMUGens.so
+7f41d9a95000-7f41d9c94000 ---p 00004000 08:07 4989070                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDSOMUGens.so
+7f41d9c94000-7f41d9c95000 r-xp 00003000 08:07 4989070                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDSOMUGens.so
+7f41d9c95000-7f41d9c96000 rwxp 00004000 08:07 4989070                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDSOMUGens.so
+7f41d9c96000-7f41d9c9c000 r-xp 00000000 08:07 4989489                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PV_ThirdParty.so
+7f41d9c9c000-7f41d9e9c000 ---p 00006000 08:07 4989489                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PV_ThirdParty.so
+7f41d9e9c000-7f41d9e9d000 r-xp 00006000 08:07 4989489                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PV_ThirdParty.so
+7f41d9e9d000-7f41d9e9e000 rwxp 00007000 08:07 4989489                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/PV_ThirdParty.so
+7f41d9e9e000-7f41d9ece000 rwxp 00000000 00:00 0 
+7f41d9ece000-7f41d9ee6000 r-xp 00000000 08:07 4989477                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/GrainUGens.so
+7f41d9ee6000-7f41da0e5000 ---p 00018000 08:07 4989477                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/GrainUGens.so
+7f41da0e5000-7f41da0e6000 r-xp 00017000 08:07 4989477                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/GrainUGens.so
+7f41da0e6000-7f41da0e7000 rwxp 00018000 08:07 4989477                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/GrainUGens.so
+7f41da0e7000-7f41da0f3000 r-xp 00000000 08:07 4989471                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DemandUGens.so
+7f41da0f3000-7f41da2f3000 ---p 0000c000 08:07 4989471                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DemandUGens.so
+7f41da2f3000-7f41da2f4000 r-xp 0000c000 08:07 4989471                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DemandUGens.so
+7f41da2f4000-7f41da2f5000 rwxp 0000d000 08:07 4989471                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DemandUGens.so
+7f41da2f5000-7f41da2f8000 r-xp 00000000 08:07 4989473                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DynNoiseUGens.so
+7f41da2f8000-7f41da4f7000 ---p 00003000 08:07 4989473                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DynNoiseUGens.so
+7f41da4f7000-7f41da4f8000 r-xp 00002000 08:07 4989473                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DynNoiseUGens.so
+7f41da4f8000-7f41da4f9000 rwxp 00003000 08:07 4989473                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/DynNoiseUGens.so
+7f41da4f9000-7f41da52b000 r-xp 00000000 08:07 4989468                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BinaryOpUGens.so
+7f41da52b000-7f41da72b000 ---p 00032000 08:07 4989468                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BinaryOpUGens.so
+7f41da72b000-7f41da72c000 r-xp 00032000 08:07 4989468                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BinaryOpUGens.so
+7f41da72c000-7f41da72d000 rwxp 00033000 08:07 4989468                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BinaryOpUGens.so
+7f41da72d000-7f41da72f000 r-xp 00000000 08:07 4989068                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDOscUGens.so
+7f41da72f000-7f41da92e000 ---p 00002000 08:07 4989068                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDOscUGens.so
+7f41da92e000-7f41da92f000 r-xp 00001000 08:07 4989068                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDOscUGens.so
+7f41da92f000-7f41da930000 rwxp 00002000 08:07 4989068                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDOscUGens.so
+7f41da930000-7f41da933000 r-xp 00000000 08:07 4989054                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/GlitchUGens.so
+7f41da933000-7f41dab32000 ---p 00003000 08:07 4989054                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/GlitchUGens.so
+7f41dab32000-7f41dab33000 r-xp 00002000 08:07 4989054                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/GlitchUGens.so
+7f41dab33000-7f41dab34000 rwxp 00003000 08:07 4989054                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/GlitchUGens.so
+7f41dab34000-7f41dab36000 r-xp 00000000 08:07 4989494                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/UnpackFFTUGens.so
+7f41dab36000-7f41dad35000 ---p 00002000 08:07 4989494                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/UnpackFFTUGens.so
+7f41dad35000-7f41dad36000 r-xp 00001000 08:07 4989494                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/UnpackFFTUGens.so
+7f41dad36000-7f41dad37000 rwxp 00002000 08:07 4989494                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/UnpackFFTUGens.so
+7f41dad37000-7f41dad43000 rwxp 00000000 00:00 0 
+7f41dad43000-7f41dad46000 r-xp 00000000 08:07 4989051                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BlackrainUGens.so
+7f41dad46000-7f41daf46000 ---p 00003000 08:07 4989051                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BlackrainUGens.so
+7f41daf46000-7f41daf47000 r-xp 00003000 08:07 4989051                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BlackrainUGens.so
+7f41daf47000-7f41daf48000 rwxp 00004000 08:07 4989051                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/BlackrainUGens.so
+7f41daf48000-7f41daf4b000 r-xp 00000000 08:07 4989066                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDFilterUGens.so
+7f41daf4b000-7f41db14a000 ---p 00003000 08:07 4989066                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDFilterUGens.so
+7f41db14a000-7f41db14b000 r-xp 00002000 08:07 4989066                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDFilterUGens.so
+7f41db14b000-7f41db14c000 rwxp 00003000 08:07 4989066                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDFilterUGens.so
+7f41db14c000-7f41db14e000 r-xp 00000000 08:07 4989067                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDGetenvUGen.so
+7f41db14e000-7f41db34d000 ---p 00002000 08:07 4989067                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDGetenvUGen.so
+7f41db34d000-7f41db34e000 r-xp 00001000 08:07 4989067                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDGetenvUGen.so
+7f41db34e000-7f41db34f000 rwxp 00002000 08:07 4989067                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/MCLDGetenvUGen.so
+7f41db34f000-7f41db351000 r-xp 00000000 08:07 4989059                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/LadspaUGen.so
+7f41db351000-7f41db551000 ---p 00002000 08:07 4989059                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/LadspaUGen.so
+7f41db551000-7f41db552000 r-xp 00002000 08:07 4989059                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/LadspaUGen.so
+7f41db552000-7f41db553000 rwxp 00003000 08:07 4989059                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/LadspaUGen.so
+7f41db553000-7f41db571000 r-xp 00000000 08:07 4989058                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshUGens.so
+7f41db571000-7f41db771000 ---p 0001e000 08:07 4989058                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshUGens.so
+7f41db771000-7f41db772000 r-xp 0001e000 08:07 4989058                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshUGens.so
+7f41db772000-7f41db773000 rwxp 0001f000 08:07 4989058                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/JoshUGens.so
+7f41db773000-7f41db789000 r-xp 00000000 08:07 6291691                    /lib/x86_64-linux-gnu/libresolv-2.17.so
+7f41db789000-7f41db989000 ---p 00016000 08:07 6291691                    /lib/x86_64-linux-gnu/libresolv-2.17.so
+7f41db989000-7f41db98a000 r-xp 00016000 08:07 6291691                    /lib/x86_64-linux-gnu/libresolv-2.17.so
+7f41db98a000-7f41db98b000 rwxp 00017000 08:07 6291691                    /lib/x86_64-linux-gnu/libresolv-2.17.so
+7f41db98b000-7f41db98d000 rwxp 00000000 00:00 0 
+7f41db98d000-7f41db992000 r-xp 00000000 08:07 400770                     /usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1
+7f41db992000-7f41dbb91000 ---p 00005000 08:07 400770                     /usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1
+7f41dbb91000-7f41dbb92000 r-xp 00004000 08:07 400770                     /usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1
+7f41dbb92000-7f41dbb93000 rwxp 00005000 08:07 400770                     /usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1
+7f41dbb93000-7f41dbb9b000 r-xp 00000000 08:07 6291858                    /lib/x86_64-linux-gnu/libwrap.so.0.7.6
+7f41dbb9b000-7f41dbd9b000 ---p 00008000 08:07 6291858                    /lib/x86_64-linux-gnu/libwrap.so.0.7.6
+7f41dbd9b000-7f41dbd9c000 r-xp 00008000 08:07 6291858                    /lib/x86_64-linux-gnu/libwrap.so.0.7.6
+7f41dbd9c000-7f41dbd9d000 rwxp 00009000 08:07 6291858                    /lib/x86_64-linux-gnu/libwrap.so.0.7.6
+7f41dbd9d000-7f41dbdff000 r-xp 00000000 08:07 787057                     /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-3.0.so
+7f41dbdff000-7f41dbffe000 ---p 00062000 08:07 787057                     /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-3.0.so
+7f41dbffe000-7f41dbfff000 r-xp 00061000 08:07 787057                     /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-3.0.so
+7f41dbfff000-7f41dc000000 rwxp 00062000 08:07 787057                     /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-3.0.so
+7f41dc000000-7f41dc021000 rwxp 00000000 00:00 0 
+7f41dc021000-7f41e0000000 ---p 00000000 00:00 0 
+7f41e0000000-7f41e0102000 rwxp 00000000 00:00 0 
+7f41e0102000-7f41e4000000 ---p 00000000 00:00 0 
+7f41e4000000-7f41e4021000 rwxp 00000000 00:00 0 
+7f41e4021000-7f41e8000000 ---p 00000000 00:00 0 
+7f41e8000000-7f41e8021000 rwxp 00000000 00:00 0 
+7f41e8021000-7f41ec000000 ---p 00000000 00:00 0 
+7f41ec000000-7f41ecb90000 rwxp 00000000 00:00 0 
+7f41ecb90000-7f41f0000000 ---p 00000000 00:00 0 
+7f41f0000000-7f41f0023000 rwxp 00000000 00:00 0 
+7f41f0023000-7f41f4000000 ---p 00000000 00:00 0 
+7f41f4000000-7f41f4021000 rwxp 00000000 00:00 0 
+7f41f4021000-7f41f8000000 ---p 00000000 00:00 0 
+7f41f8000000-7f41f8021000 rwxp 00000000 00:00 0 
+7f41f8021000-7f41fc000000 ---p 00000000 00:00 0 
+7f41fc032000-7f41fc035000 ---p 00000000 00:00 0 
+7f41fc035000-7f41fc133000 rwxp 00000000 00:00 0 
+7f41fc133000-7f41fc13b000 r-xp 00000000 08:07 6291630                    /lib/x86_64-linux-gnu/libjson.so.0.1.0
+7f41fc13b000-7f41fc33a000 ---p 00008000 08:07 6291630                    /lib/x86_64-linux-gnu/libjson.so.0.1.0
+7f41fc33a000-7f41fc33b000 r-xp 00007000 08:07 6291630                    /lib/x86_64-linux-gnu/libjson.so.0.1.0
+7f41fc33b000-7f41fc33c000 rwxp 00008000 08:07 6291630                    /lib/x86_64-linux-gnu/libjson.so.0.1.0
+7f41fc33c000-7f41fc383000 r-xp 00000000 08:07 398572                     /usr/lib/x86_64-linux-gnu/libpulse.so.0.15.3
+7f41fc383000-7f41fc582000 ---p 00047000 08:07 398572                     /usr/lib/x86_64-linux-gnu/libpulse.so.0.15.3
+7f41fc582000-7f41fc583000 r-xp 00046000 08:07 398572                     /usr/lib/x86_64-linux-gnu/libpulse.so.0.15.3
+7f41fc583000-7f41fc584000 rwxp 00047000 08:07 398572                     /usr/lib/x86_64-linux-gnu/libpulse.so.0.15.3
+7f41fc584000-7f41fc587000 ---p 00000000 00:00 0 
+7f41fc587000-7f41fc685000 rwxp 00000000 00:00 0                          [stack:25963]
+7f41fc685000-7f41fc688000 ---p 00000000 00:00 0 
+7f41fc688000-7f41fc786000 rwxp 00000000 00:00 0                          [stack:25160]
+7f41fc786000-7f41fc86a000 r-xp 00000000 08:07 393384                     /usr/lib/x86_64-linux-gnu/libasound.so.2.0.0
+7f41fc86a000-7f41fca69000 ---p 000e4000 08:07 393384                     /usr/lib/x86_64-linux-gnu/libasound.so.2.0.0
+7f41fca69000-7f41fca6f000 r-xp 000e3000 08:07 393384                     /usr/lib/x86_64-linux-gnu/libasound.so.2.0.0
+7f41fca6f000-7f41fca70000 rwxp 000e9000 08:07 393384                     /usr/lib/x86_64-linux-gnu/libasound.so.2.0.0
+7f41fca70000-7f41fca7e000 r-xp 00000000 08:07 1729897                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libjsoundalsa.so
+7f41fca7e000-7f41fcb7d000 ---p 0000e000 08:07 1729897                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libjsoundalsa.so
+7f41fcb7d000-7f41fcb80000 rwxp 0000d000 08:07 1729897                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libjsoundalsa.so
+7f41fcb80000-7f41fcbac000 r-xp 00000000 08:07 1729941                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libjsound.so
+7f41fcbac000-7f41fccac000 ---p 0002c000 08:07 1729941                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libjsound.so
+7f41fccac000-7f41fccb4000 rwxp 0002c000 08:07 1729941                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libjsound.so
+7f41fccb4000-7f41fccb6000 rwxp 00000000 00:00 0 
+7f41fccb6000-7f41fccb9000 ---p 00000000 00:00 0 
+7f41fccb9000-7f41fcdb7000 rwxp 00000000 00:00 0                          [stack:25159]
+7f41fcdb7000-7f41fcdba000 ---p 00000000 00:00 0 
+7f41fcdba000-7f41fceb8000 rwxp 00000000 00:00 0                          [stack:25158]
+7f41fceb8000-7f41fcebb000 ---p 00000000 00:00 0 
+7f41fcebb000-7f41fcfb9000 rwxp 00000000 00:00 0                          [stack:25157]
+7f41fcfb9000-7f41fcfbc000 ---p 00000000 00:00 0 
+7f41fcfbc000-7f41fd0ba000 rwxp 00000000 00:00 0                          [stack:25156]
+7f41fd0ba000-7f41fd0bd000 ---p 00000000 00:00 0 
+7f41fd0bd000-7f41fd1bb000 rwxp 00000000 00:00 0                          [stack:25155]
+7f41fd1bb000-7f41fd1be000 ---p 00000000 00:00 0 
+7f41fd1be000-7f41fd2bc000 rwxp 00000000 00:00 0                          [stack:25154]
+7f41fd2bc000-7f41fd2bf000 ---p 00000000 00:00 0 
+7f41fd2bf000-7f41fd3bd000 rwxp 00000000 00:00 0                          [stack:25153]
+7f41fd3bd000-7f41fd3c3000 r-xp 00000000 08:07 401217                     /usr/lib/x86_64-linux-gnu/libogg.so.0.8.0
+7f41fd3c3000-7f41fd5c2000 ---p 00006000 08:07 401217                     /usr/lib/x86_64-linux-gnu/libogg.so.0.8.0
+7f41fd5c2000-7f41fd5c3000 r-xp 00005000 08:07 401217                     /usr/lib/x86_64-linux-gnu/libogg.so.0.8.0
+7f41fd5c3000-7f41fd5c4000 rwxp 00006000 08:07 401217                     /usr/lib/x86_64-linux-gnu/libogg.so.0.8.0
+7f41fd5c4000-7f41fd5ef000 r-xp 00000000 08:07 401423                     /usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.5
+7f41fd5ef000-7f41fd7ef000 ---p 0002b000 08:07 401423                     /usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.5
+7f41fd7ef000-7f41fd7f0000 r-xp 0002b000 08:07 401423                     /usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.5
+7f41fd7f0000-7f41fd7f1000 rwxp 0002c000 08:07 401423                     /usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.5
+7f41fd7f1000-7f41fdaa4000 r-xp 00000000 08:07 401425                     /usr/lib/x86_64-linux-gnu/libvorbisenc.so.2.0.8
+7f41fdaa4000-7f41fdca3000 ---p 002b3000 08:07 401425                     /usr/lib/x86_64-linux-gnu/libvorbisenc.so.2.0.8
+7f41fdca3000-7f41fdcbf000 r-xp 002b2000 08:07 401425                     /usr/lib/x86_64-linux-gnu/libvorbisenc.so.2.0.8
+7f41fdcbf000-7f41fdcc0000 rwxp 002ce000 08:07 401425                     /usr/lib/x86_64-linux-gnu/libvorbisenc.so.2.0.8
+7f41fdcc0000-7f41fdd0a000 r-xp 00000000 08:07 400622                     /usr/lib/x86_64-linux-gnu/libFLAC.so.8.2.0
+7f41fdd0a000-7f41fdf0a000 ---p 0004a000 08:07 400622                     /usr/lib/x86_64-linux-gnu/libFLAC.so.8.2.0
+7f41fdf0a000-7f41fdf0b000 r-xp 0004a000 08:07 400622                     /usr/lib/x86_64-linux-gnu/libFLAC.so.8.2.0
+7f41fdf0b000-7f41fdf0c000 rwxp 0004b000 08:07 400622                     /usr/lib/x86_64-linux-gnu/libFLAC.so.8.2.0
+7f41fdf0c000-7f41fdf4f000 r-xp 00000000 08:07 6291826                    /lib/x86_64-linux-gnu/libdbus-1.so.3.7.2
+7f41fdf4f000-7f41fe14e000 ---p 00043000 08:07 6291826                    /lib/x86_64-linux-gnu/libdbus-1.so.3.7.2
+7f41fe14e000-7f41fe14f000 r-xp 00042000 08:07 6291826                    /lib/x86_64-linux-gnu/libdbus-1.so.3.7.2
+7f41fe14f000-7f41fe150000 rwxp 00043000 08:07 6291826                    /lib/x86_64-linux-gnu/libdbus-1.so.3.7.2
+7f41fe150000-7f41fe164000 r-xp 00000000 08:07 6291845                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f41fe164000-7f41fe364000 ---p 00014000 08:07 6291845                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f41fe364000-7f41fe365000 r-xp 00014000 08:07 6291845                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f41fe365000-7f41fe366000 rwxp 00015000 08:07 6291845                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f41fe366000-7f41fe44b000 r-xp 00000000 08:07 394327                     /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+7f41fe44b000-7f41fe64a000 ---p 000e5000 08:07 394327                     /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+7f41fe64a000-7f41fe652000 r-xp 000e4000 08:07 394327                     /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+7f41fe652000-7f41fe654000 rwxp 000ec000 08:07 394327                     /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+7f41fe654000-7f41fe669000 rwxp 00000000 00:00 0 
+7f41fe669000-7f41fe850000 r-xp 00000000 08:07 397553                     /usr/lib/x86_64-linux-gnu/libfftw3f.so.3.3.2
+7f41fe850000-7f41fea50000 ---p 001e7000 08:07 397553                     /usr/lib/x86_64-linux-gnu/libfftw3f.so.3.3.2
+7f41fea50000-7f41fea61000 r-xp 001e7000 08:07 397553                     /usr/lib/x86_64-linux-gnu/libfftw3f.so.3.3.2
+7f41fea61000-7f41fea62000 rwxp 001f8000 08:07 397553                     /usr/lib/x86_64-linux-gnu/libfftw3f.so.3.3.2
+7f41fea62000-7f41feab7000 r-xp 00000000 08:07 397561                     /usr/lib/x86_64-linux-gnu/libjack.so.0.1.0
+7f41feab7000-7f41fecb6000 ---p 00055000 08:07 397561                     /usr/lib/x86_64-linux-gnu/libjack.so.0.1.0
+7f41fecb6000-7f41fecb9000 r-xp 00054000 08:07 397561                     /usr/lib/x86_64-linux-gnu/libjack.so.0.1.0
+7f41fecb9000-7f41fecba000 rwxp 00057000 08:07 397561                     /usr/lib/x86_64-linux-gnu/libjack.so.0.1.0
+7f41fecba000-7f41fecbb000 rwxp 00000000 00:00 0 
+7f41fecbb000-7f41fed1a000 r-xp 00000000 08:07 401334                     /usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.25
+7f41fed1a000-7f41fef1a000 ---p 0005f000 08:07 401334                     /usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.25
+7f41fef1a000-7f41fef1c000 r-xp 0005f000 08:07 401334                     /usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.25
+7f41fef1c000-7f41fef1d000 rwxp 00061000 08:07 401334                     /usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.25
+7f41fef1d000-7f41fef21000 rwxp 00000000 00:00 0 
+7f41fef21000-7f41fef30000 r-xp 00000000 08:07 400783                     /usr/lib/x86_64-linux-gnu/libavahi-client.so.3.2.9
+7f41fef30000-7f41ff130000 ---p 0000f000 08:07 400783                     /usr/lib/x86_64-linux-gnu/libavahi-client.so.3.2.9
+7f41ff130000-7f41ff131000 r-xp 0000f000 08:07 400783                     /usr/lib/x86_64-linux-gnu/libavahi-client.so.3.2.9
+7f41ff131000-7f41ff132000 rwxp 00010000 08:07 400783                     /usr/lib/x86_64-linux-gnu/libavahi-client.so.3.2.9
+7f41ff132000-7f41ff13d000 r-xp 00000000 08:07 401029                     /usr/lib/x86_64-linux-gnu/libavahi-common.so.3.5.3
+7f41ff13d000-7f41ff33c000 ---p 0000b000 08:07 401029                     /usr/lib/x86_64-linux-gnu/libavahi-common.so.3.5.3
+7f41ff33c000-7f41ff33d000 r-xp 0000a000 08:07 401029                     /usr/lib/x86_64-linux-gnu/libavahi-common.so.3.5.3
+7f41ff33d000-7f41ff33e000 rwxp 0000b000 08:07 401029                     /usr/lib/x86_64-linux-gnu/libavahi-common.so.3.5.3
+7f41ff33e000-7f41ff3a0000 r-xp 00000000 08:07 4989481                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/libscsynth.so
+7f41ff3a0000-7f41ff5a0000 ---p 00062000 08:07 4989481                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/libscsynth.so
+7f41ff5a0000-7f41ff5a2000 r-xp 00062000 08:07 4989481                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/libscsynth.so
+7f41ff5a2000-7f41ff5a4000 rwxp 00064000 08:07 4989481                    /home/kasyaar/workspace/tutorial/target/native/linux/x86_64/libscsynth.so
+7f41ff5a4000-7f41ff5c4000 rwxp 00000000 00:00 0 
+7f41ff5c4000-7f41ff5db000 r-xp 00000000 00:13 159914                     /tmp/jna/jna6554181005869475068.tmp (deleted)
+7f41ff5db000-7f41ff7da000 ---p 00017000 00:13 159914                     /tmp/jna/jna6554181005869475068.tmp (deleted)
+7f41ff7da000-7f41ff7db000 r-xp 00016000 00:13 159914                     /tmp/jna/jna6554181005869475068.tmp (deleted)
+7f41ff7db000-7f41ff7dc000 rwxp 00017000 00:13 159914                     /tmp/jna/jna6554181005869475068.tmp (deleted)
+7f41ff7dc000-7f41ff7e3000 r-xp 00000000 08:07 1729915                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libnio.so
+7f41ff7e3000-7f41ff8e2000 ---p 00007000 08:07 1729915                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libnio.so
+7f41ff8e2000-7f41ff8e4000 rwxp 00006000 08:07 1729915                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libnio.so
+7f41ff8e4000-7f41ff8e7000 ---p 00000000 00:00 0 
+7f41ff8e7000-7f41ff9e5000 rwxp 00000000 00:00 0                          [stack:25152]
+7f41ff9e5000-7f41ff9ea000 r-xp 00000000 08:07 400716                     /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7f41ff9ea000-7f41ffbe9000 ---p 00005000 08:07 400716                     /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7f41ffbe9000-7f41ffbea000 r-xp 00004000 08:07 400716                     /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7f41ffbea000-7f41ffbeb000 rwxp 00005000 08:07 400716                     /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7f41ffbeb000-7f41ffbf4000 r-xp 00000000 08:07 400734                     /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7f41ffbf4000-7f41ffdf3000 ---p 00009000 08:07 400734                     /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7f41ffdf3000-7f41ffdf4000 r-xp 00008000 08:07 400734                     /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7f41ffdf4000-7f41ffdf5000 rwxp 00009000 08:07 400734                     /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7f41ffdf5000-7f41ffdfe000 r-xp 00000000 08:07 400708                     /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7f41ffdfe000-7f41ffffe000 ---p 00009000 08:07 400708                     /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7f41ffffe000-7f41fffff000 r-xp 00009000 08:07 400708                     /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7f41fffff000-7f4200000000 rwxp 0000a000 08:07 400708                     /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7f4200000000-7f4200021000 rwxp 00000000 00:00 0 
+7f4200021000-7f4204000000 ---p 00000000 00:00 0 
+7f4204000000-7f42046f0000 rwxp 00000000 00:00 0 
+7f42046f0000-7f4208000000 ---p 00000000 00:00 0 
+7f4208000000-7f4208021000 rwxp 00000000 00:00 0 
+7f4208021000-7f420c000000 ---p 00000000 00:00 0 
+7f420c000000-7f420c021000 rwxp 00000000 00:00 0 
+7f420c021000-7f4210000000 ---p 00000000 00:00 0 
+7f4210000000-7f4210021000 rwxp 00000000 00:00 0 
+7f4210021000-7f4214000000 ---p 00000000 00:00 0 
+7f4214000000-7f4214021000 rwxp 00000000 00:00 0 
+7f4214021000-7f4218000000 ---p 00000000 00:00 0 
+7f4218000000-7f4218065000 rwxp 00000000 00:00 0 
+7f4218065000-7f421c000000 ---p 00000000 00:00 0 
+7f421c000000-7f421c073000 rwxp 00000000 00:00 0 
+7f421c073000-7f4220000000 ---p 00000000 00:00 0 
+7f4220000000-7f4220021000 rwxp 00000000 00:00 0 
+7f4220021000-7f4224000000 ---p 00000000 00:00 0 
+7f4224000000-7f4224021000 rwxp 00000000 00:00 0 
+7f4224021000-7f4228000000 ---p 00000000 00:00 0 
+7f4228000000-7f4228021000 rwxp 00000000 00:00 0 
+7f4228021000-7f422c000000 ---p 00000000 00:00 0 
+7f422c000000-7f422c569000 rwxp 00000000 00:00 0 
+7f422c569000-7f4230000000 ---p 00000000 00:00 0 
+7f4230000000-7f4230021000 rwxp 00000000 00:00 0 
+7f4230021000-7f4234000000 ---p 00000000 00:00 0 
+7f4234000000-7f4234021000 rwxp 00000000 00:00 0 
+7f4234021000-7f4238000000 ---p 00000000 00:00 0 
+7f4238000000-7f4238021000 rwxp 00000000 00:00 0 
+7f4238021000-7f423c000000 ---p 00000000 00:00 0 
+7f423c000000-7f423c021000 rwxp 00000000 00:00 0 
+7f423c021000-7f4240000000 ---p 00000000 00:00 0 
+7f4240000000-7f4240021000 rwxp 00000000 00:00 0 
+7f4240021000-7f4244000000 ---p 00000000 00:00 0 
+7f4244000000-7f4244120000 rwxp 00000000 00:00 0 
+7f4244120000-7f4248000000 ---p 00000000 00:00 0 
+7f4248000000-7f4248021000 rwxp 00000000 00:00 0 
+7f4248021000-7f424c000000 ---p 00000000 00:00 0 
+7f424c000000-7f424c021000 rwxp 00000000 00:00 0 
+7f424c021000-7f4250000000 ---p 00000000 00:00 0 
+7f4250000000-7f4250021000 rwxp 00000000 00:00 0 
+7f4250021000-7f4254000000 ---p 00000000 00:00 0 
+7f4254027000-7f4254028000 r-xp 00000000 00:00 0 
+7f425402b000-7f425403d000 rwxs 00000000 00:15 124631                     /run/shm/jack-shm-registry
+7f425403f000-7f4254040000 ---p 00000000 00:00 0 
+7f4254040000-7f42540c1000 rwxp 00000000 00:00 0 
+7f42540c1000-7f42540c8000 r-xs 00000000 08:07 788943                     /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7f42540c8000-7f42540d0000 r-xs 00115000 08:07 1729605                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/resources.jar
+7f42540d0000-7f42540d1000 rwxp 00000000 00:00 0 
+7f42540d1000-7f42540d2000 r-xs 00000000 08:07 3675442                    /var/cache/fontconfig/c05880de57d1f5e948fdfacc138775d9-le64.cache-3
+7f42540d2000-7f42540db000 r-xs 00000000 08:07 3670287                    /var/cache/fontconfig/945677eb7aeaf62f1d50efc3fb3ec7d8-le64.cache-3
+7f42540db000-7f42540dd000 r-xs 00000000 08:07 3686334                    /var/cache/fontconfig/99e8ed0e538f840c565b6ed5dad60d56-le64.cache-3
+7f42540dd000-7f42540e2000 r-xs 00000000 08:07 3675184                    /var/cache/fontconfig/2cd17615ca594fa2959ae173292e504c-le64.cache-3
+7f42540e2000-7f42540e3000 r-xs 00000000 08:07 3675183                    /var/cache/fontconfig/e7071f4a29fa870f4323321c154eba04-le64.cache-3
+7f42540e3000-7f42540e4000 r-xs 00000000 08:07 3675178                    /var/cache/fontconfig/0d8c3b2ac0904cb8a57a757ad11a4a08-le64.cache-3
+7f42540e4000-7f42540ea000 r-xs 00000000 08:07 3675169                    /var/cache/fontconfig/a755afe4a08bf5b97852ceb7400b47bc-le64.cache-3
+7f42540ea000-7f42540ee000 r-xs 00000000 08:07 3675168                    /var/cache/fontconfig/6d41288fd70b0be22e8c3a91e032eec0-le64.cache-3
+7f42540ee000-7f42540fe000 r-xs 00000000 08:07 3686295                    /var/cache/fontconfig/04aabc0a78ac019cf9454389977116d2-le64.cache-3
+7f42540fe000-7f42540ff000 r-xs 00000000 08:07 3674652                    /var/cache/fontconfig/1ac9eb803944fde146138c791f5cc56a-le64.cache-3
+7f42540ff000-7f4254102000 r-xs 00000000 08:07 3688114                    /var/cache/fontconfig/385c0604a188198f04d133e54aba7fe7-le64.cache-3
+7f4254102000-7f4254103000 r-xs 00000000 08:07 3674595                    /var/cache/fontconfig/dc05db6664285cc2f12bf69c139ae4c3-le64.cache-3
+7f4254103000-7f4254105000 r-xs 00000000 08:07 3674574                    /var/cache/fontconfig/767a8244fc0220cfb567a839d0392e0b-le64.cache-3
+7f4254105000-7f4254108000 r-xs 00000000 08:07 3688116                    /var/cache/fontconfig/8801497958630a81b71ace7c5f9b32a8-le64.cache-3
+7f4254108000-7f4254136000 r-xs 00000000 08:07 3674384                    /var/cache/fontconfig/365b55f210c0a22e9a19e35191240f32-le64.cache-3
+7f4254136000-7f425413b000 r-xs 00000000 08:07 3674034                    /var/cache/fontconfig/3047814df9a2f067bd2d96a2b9c36e5a-le64.cache-3
+7f425413b000-7f425413e000 ---p 00000000 00:00 0 
+7f425413e000-7f425423c000 rwxp 00000000 00:00 0                          [stack:25151]
+7f425423c000-7f42542b5000 r-xp 00000000 08:07 1729923                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libfontmanager.so
+7f42542b5000-7f42543b4000 ---p 00079000 08:07 1729923                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libfontmanager.so
+7f42543b4000-7f42543ca000 rwxp 00078000 08:07 1729923                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libfontmanager.so
+7f42543ca000-7f42543db000 rwxp 00000000 00:00 0 
+7f42543db000-7f42543e0000 r-xp 00000000 08:07 400712                     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7f42543e0000-7f42545df000 ---p 00005000 08:07 400712                     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7f42545df000-7f42545e0000 r-xp 00004000 08:07 400712                     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7f42545e0000-7f42545e1000 rwxp 00005000 08:07 400712                     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7f42545e1000-7f42545e3000 r-xp 00000000 08:07 400701                     /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7f42545e3000-7f42547e3000 ---p 00002000 08:07 400701                     /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7f42547e3000-7f42547e4000 r-xp 00002000 08:07 400701                     /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7f42547e4000-7f42547e5000 rwxp 00003000 08:07 400701                     /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7f42547e5000-7f4254802000 r-xp 00000000 08:07 393671                     /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7f4254802000-7f4254a01000 ---p 0001d000 08:07 393671                     /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7f4254a01000-7f4254a02000 r-xp 0001c000 08:07 393671                     /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7f4254a02000-7f4254a03000 rwxp 0001d000 08:07 393671                     /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7f4254a03000-7f4254a11000 r-xp 00000000 08:07 397670                     /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7f4254a11000-7f4254c10000 ---p 0000e000 08:07 397670                     /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7f4254c10000-7f4254c11000 r-xp 0000d000 08:07 397670                     /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7f4254c11000-7f4254c12000 rwxp 0000e000 08:07 397670                     /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7f4254c12000-7f4254c17000 r-xp 00000000 08:07 400738                     /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7f4254c17000-7f4254e16000 ---p 00005000 08:07 400738                     /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7f4254e16000-7f4254e17000 r-xp 00004000 08:07 400738                     /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7f4254e17000-7f4254e18000 rwxp 00005000 08:07 400738                     /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7f4254e18000-7f4254f4c000 r-xp 00000000 08:07 394155                     /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7f4254f4c000-7f425514c000 ---p 00134000 08:07 394155                     /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7f425514c000-7f425514d000 r-xp 00134000 08:07 394155                     /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7f425514d000-7f4255152000 rwxp 00135000 08:07 394155                     /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7f4255152000-7f4255162000 r-xp 00000000 08:07 400714                     /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7f4255162000-7f4255362000 ---p 00010000 08:07 400714                     /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7f4255362000-7f4255363000 r-xp 00010000 08:07 400714                     /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7f4255363000-7f4255364000 rwxp 00011000 08:07 400714                     /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7f4255364000-7f4255369000 r-xs 00000000 08:07 3688106                    /var/cache/fontconfig/b47c4e1ecd0709278f4910c18777a504-le64.cache-3
+7f4255369000-7f425537a000 r-xs 00000000 08:07 3670262                    /var/cache/fontconfig/d52a8644073d54c13679302ca1180695-le64.cache-3
+7f425537a000-7f4255385000 r-xs 00000000 08:07 3670283                    /var/cache/fontconfig/e13b20fdb08344e0e664864cc2ede53d-le64.cache-3
+7f4255385000-7f42553c7000 r-xp 00000000 08:07 1729895                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/xawt/libmawt.so
+7f42553c7000-7f42554c6000 ---p 00042000 08:07 1729895                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/xawt/libmawt.so
+7f42554c6000-7f42554d2000 rwxp 00041000 08:07 1729895                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/xawt/libmawt.so
+7f42554d2000-7f42554d3000 rwxp 00000000 00:00 0 
+7f42554d3000-7f4255565000 r-xp 00000000 08:07 1729887                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libawt.so
+7f4255565000-7f4255664000 ---p 00092000 08:07 1729887                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libawt.so
+7f4255664000-7f425567e000 rwxp 00091000 08:07 1729887                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libawt.so
+7f425567e000-7f42556a2000 rwxp 00000000 00:00 0 
+7f42556a2000-7f42556a5000 ---p 00000000 00:00 0 
+7f42556a5000-7f42557a3000 rwxp 00000000 00:00 0 
+7f42557a3000-7f42557a6000 ---p 00000000 00:00 0 
+7f42557a6000-7f42558a4000 rwxp 00000000 00:00 0                          [stack:25121]
+7f42558a4000-7f42558a7000 ---p 00000000 00:00 0 
+7f42558a7000-7f42559a5000 rwxp 00000000 00:00 0                          [stack:25120]
+7f42559a5000-7f42559a8000 ---p 00000000 00:00 0 
+7f42559a8000-7f4255aa6000 rwxp 00000000 00:00 0                          [stack:25119]
+7f4255aa6000-7f4255aa9000 ---p 00000000 00:00 0 
+7f4255aa9000-7f4255ba7000 rwxp 00000000 00:00 0                          [stack:25106]
+7f4255ba7000-7f4255baa000 ---p 00000000 00:00 0 
+7f4255baa000-7f4255ca8000 rwxp 00000000 00:00 0 
+7f4255ca8000-7f4255cbb000 r-xp 00000000 08:07 1729881                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libnet.so
+7f4255cbb000-7f4255dbc000 ---p 00013000 08:07 1729881                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libnet.so
+7f4255dbc000-7f4255dbf000 rwxp 00014000 08:07 1729881                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libnet.so
+7f4255dbf000-7f4255dc2000 ---p 00000000 00:00 0 
+7f4255dc2000-7f4255ec0000 rwxp 00000000 00:00 0 
+7f4255ec0000-7f4255ec3000 ---p 00000000 00:00 0 
+7f4255ec3000-7f4255fc1000 rwxp 00000000 00:00 0                          [stack:25956]
+7f4255fc1000-7f4256000000 r-xs 0032d000 08:07 3278364                    /home/kasyaar/.m2/repository/org/clojure/clojure/1.5.1/clojure-1.5.1.jar
+7f4256000000-7f42567c0000 rwxp 00000000 00:00 0 
+7f42567c0000-7f425cb59000 rwxp 00000000 00:00 0 
+7f425cb59000-7f4260000000 ---p 00000000 00:00 0 
+7f4260000000-7f4260001000 r-xs 00000000 08:07 3678517                    /var/cache/fontconfig/4794a0821666d79190d59a36cb4f44b5-le64.cache-3
+7f4260001000-7f4260002000 r-xs 00000000 08:07 3673737                    /var/cache/fontconfig/56cf4f4769d0f4abc89a4895d7bd3ae1-le64.cache-3
+7f4260002000-7f4260003000 r-xs 00000000 08:07 3673363                    /var/cache/fontconfig/b9d506c9ac06c20b433354fa67a72993-le64.cache-3
+7f4260003000-7f4260004000 r-xs 00000000 08:07 3672850                    /var/cache/fontconfig/0c9eb80ebd1c36541ebe2852d3bb0c49-le64.cache-3
+7f4260004000-7f4260008000 r-xs 00000000 08:07 3670285                    /var/cache/fontconfig/7ef2298fde41cc6eeb7af42e48b7d293-le64.cache-3
+7f4260008000-7f426000a000 r-xs 00007000 08:07 3807194                    /home/kasyaar/.m2/repository/org/swinglabs/swingx/swingx-common/1.6.3/swingx-common-1.6.3.jar
+7f426000a000-7f426000f000 r-xs 0003d000 08:07 3545570                    /home/kasyaar/.m2/repository/commons-net/commons-net/3.0.1/commons-net-3.0.1.jar
+7f426000f000-7f4260010000 ---p 00000000 00:00 0 
+7f4260010000-7f4260110000 rwxp 00000000 00:00 0 
+7f4260110000-7f4260113000 ---p 00000000 00:00 0 
+7f4260113000-7f4260211000 rwxp 00000000 00:00 0                          [stack:25100]
+7f4260211000-7f4260214000 ---p 00000000 00:00 0 
+7f4260214000-7f4260312000 rwxp 00000000 00:00 0                          [stack:25099]
+7f4260312000-7f4260315000 ---p 00000000 00:00 0 
+7f4260315000-7f4260413000 rwxp 00000000 00:00 0                          [stack:25098]
+7f4260413000-7f4260416000 ---p 00000000 00:00 0 
+7f4260416000-7f4260514000 rwxp 00000000 00:00 0                          [stack:25097]
+7f4260514000-7f4260517000 ---p 00000000 00:00 0 
+7f4260517000-7f4260615000 rwxp 00000000 00:00 0 
+7f4260615000-7f42608de000 r-xp 00000000 08:07 394737                     /usr/lib/locale/locale-archive
+7f42608de000-7f42608e1000 ---p 00000000 00:00 0 
+7f42608e1000-7f42609df000 rwxp 00000000 00:00 0                          [stack:25095]
+7f42609df000-7f42609e2000 ---p 00000000 00:00 0 
+7f42609e2000-7f4260ae0000 rwxp 00000000 00:00 0                          [stack:25094]
+7f4260ae0000-7f4260ae1000 ---p 00000000 00:00 0 
+7f4260ae1000-7f42610e6000 rwxp 00000000 00:00 0                          [stack:25093]
+7f42610e6000-7f426127e000 r-xs 03083000 08:07 1730144                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/rt.jar
+7f426127e000-7f426127f000 ---p 00000000 00:00 0 
+7f426127f000-7f426137f000 rwxp 00000000 00:00 0                          [stack:25092]
+7f426137f000-7f4261380000 ---p 00000000 00:00 0 
+7f4261380000-7f4261480000 rwxp 00000000 00:00 0                          [stack:25091]
+7f4261480000-7f4261481000 ---p 00000000 00:00 0 
+7f4261481000-7f4261581000 rwxp 00000000 00:00 0                          [stack:25090]
+7f4261581000-7f4261582000 ---p 00000000 00:00 0 
+7f4261582000-7f42616a2000 rwxp 00000000 00:00 0                          [stack:25089]
+7f42616a2000-7f42617c3000 rwxp 00000000 00:00 0 
+7f42617c3000-7f42617ec000 rwxp 00000000 00:00 0 
+7f42617ec000-7f426180c000 rwxp 00000000 00:00 0 
+7f426180c000-7f426192c000 rwxp 00000000 00:00 0 
+7f426192c000-7f42619cb000 rwxp 00000000 00:00 0 
+7f42619cb000-7f42619cd000 ---p 00000000 00:00 0 
+7f42619cd000-7f42619ed000 rwxp 00000000 00:00 0 
+7f42619ed000-7f4261b4e000 rwxp 00000000 00:00 0 
+7f4261b4e000-7f4261b5c000 r-xp 00000000 08:07 1729953                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libzip.so
+7f4261b5c000-7f4261c5e000 ---p 0000e000 08:07 1729953                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libzip.so
+7f4261c5e000-7f4261c61000 rwxp 00010000 08:07 1729953                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libzip.so
+7f4261c61000-7f4261c62000 rwxp 00000000 00:00 0 
+7f4261c62000-7f4261c6e000 r-xp 00000000 08:07 6291717                    /lib/x86_64-linux-gnu/libnss_files-2.17.so
+7f4261c6e000-7f4261e6d000 ---p 0000c000 08:07 6291717                    /lib/x86_64-linux-gnu/libnss_files-2.17.so
+7f4261e6d000-7f4261e6e000 r-xp 0000b000 08:07 6291717                    /lib/x86_64-linux-gnu/libnss_files-2.17.so
+7f4261e6e000-7f4261e6f000 rwxp 0000c000 08:07 6291717                    /lib/x86_64-linux-gnu/libnss_files-2.17.so
+7f4261e6f000-7f4261e7a000 r-xp 00000000 08:07 6291711                    /lib/x86_64-linux-gnu/libnss_nis-2.17.so
+7f4261e7a000-7f4262079000 ---p 0000b000 08:07 6291711                    /lib/x86_64-linux-gnu/libnss_nis-2.17.so
+7f4262079000-7f426207a000 r-xp 0000a000 08:07 6291711                    /lib/x86_64-linux-gnu/libnss_nis-2.17.so
+7f426207a000-7f426207b000 rwxp 0000b000 08:07 6291711                    /lib/x86_64-linux-gnu/libnss_nis-2.17.so
+7f426207b000-7f4262083000 r-xp 00000000 08:07 6291701                    /lib/x86_64-linux-gnu/libnss_compat-2.17.so
+7f4262083000-7f4262282000 ---p 00008000 08:07 6291701                    /lib/x86_64-linux-gnu/libnss_compat-2.17.so
+7f4262282000-7f4262283000 r-xp 00007000 08:07 6291701                    /lib/x86_64-linux-gnu/libnss_compat-2.17.so
+7f4262283000-7f4262284000 rwxp 00008000 08:07 6291701                    /lib/x86_64-linux-gnu/libnss_compat-2.17.so
+7f4262284000-7f426229b000 r-xp 00000000 08:07 6291681                    /lib/x86_64-linux-gnu/libnsl-2.17.so
+7f426229b000-7f426249a000 ---p 00017000 08:07 6291681                    /lib/x86_64-linux-gnu/libnsl-2.17.so
+7f426249a000-7f426249b000 r-xp 00016000 08:07 6291681                    /lib/x86_64-linux-gnu/libnsl-2.17.so
+7f426249b000-7f426249c000 rwxp 00017000 08:07 6291681                    /lib/x86_64-linux-gnu/libnsl-2.17.so
+7f426249c000-7f426249e000 rwxp 00000000 00:00 0 
+7f426249e000-7f42624c7000 r-xp 00000000 08:07 1729903                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libjava.so
+7f42624c7000-7f42625c6000 ---p 00029000 08:07 1729903                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libjava.so
+7f42625c6000-7f42625cd000 rwxp 00028000 08:07 1729903                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libjava.so
+7f42625cd000-7f42625da000 r-xp 00000000 08:07 1729977                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libverify.so
+7f42625da000-7f42626d9000 ---p 0000d000 08:07 1729977                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libverify.so
+7f42626d9000-7f42626dc000 rwxp 0000c000 08:07 1729977                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/libverify.so
+7f42626dc000-7f42626e3000 r-xp 00000000 08:07 6291675                    /lib/x86_64-linux-gnu/librt-2.17.so
+7f42626e3000-7f42628e2000 ---p 00007000 08:07 6291675                    /lib/x86_64-linux-gnu/librt-2.17.so
+7f42628e2000-7f42628e3000 r-xp 00006000 08:07 6291675                    /lib/x86_64-linux-gnu/librt-2.17.so
+7f42628e3000-7f42628e4000 rwxp 00007000 08:07 6291675                    /lib/x86_64-linux-gnu/librt-2.17.so
+7f42628e4000-7f42628e7000 ---p 00000000 00:00 0 
+7f42628e7000-7f42629e5000 rwxp 00000000 00:00 0                          [stack:25088]
+7f42629e5000-7f4262ae8000 r-xp 00000000 08:07 6291707                    /lib/x86_64-linux-gnu/libm-2.17.so
+7f4262ae8000-7f4262ce8000 ---p 00103000 08:07 6291707                    /lib/x86_64-linux-gnu/libm-2.17.so
+7f4262ce8000-7f4262ce9000 r-xp 00103000 08:07 6291707                    /lib/x86_64-linux-gnu/libm-2.17.so
+7f4262ce9000-7f4262cea000 rwxp 00104000 08:07 6291707                    /lib/x86_64-linux-gnu/libm-2.17.so
+7f4262cea000-7f4263608000 r-xp 00000000 08:07 1729927                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/server/libjvm.so
+7f4263608000-7f426370a000 ---p 0091e000 08:07 1729927                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/server/libjvm.so
+7f426370a000-7f42638c0000 rwxp 00920000 08:07 1729927                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/server/libjvm.so
+7f42638c0000-7f42638fa000 rwxp 00000000 00:00 0 
+7f42638fa000-7f4263ab8000 r-xp 00000000 08:07 6291695                    /lib/x86_64-linux-gnu/libc-2.17.so
+7f4263ab8000-7f4263cb7000 ---p 001be000 08:07 6291695                    /lib/x86_64-linux-gnu/libc-2.17.so
+7f4263cb7000-7f4263cbb000 r-xp 001bd000 08:07 6291695                    /lib/x86_64-linux-gnu/libc-2.17.so
+7f4263cbb000-7f4263cbd000 rwxp 001c1000 08:07 6291695                    /lib/x86_64-linux-gnu/libc-2.17.so
+7f4263cbd000-7f4263cc2000 rwxp 00000000 00:00 0 
+7f4263cc2000-7f4263cc5000 r-xp 00000000 08:07 6291697                    /lib/x86_64-linux-gnu/libdl-2.17.so
+7f4263cc5000-7f4263ec4000 ---p 00003000 08:07 6291697                    /lib/x86_64-linux-gnu/libdl-2.17.so
+7f4263ec4000-7f4263ec5000 r-xp 00002000 08:07 6291697                    /lib/x86_64-linux-gnu/libdl-2.17.so
+7f4263ec5000-7f4263ec6000 rwxp 00003000 08:07 6291697                    /lib/x86_64-linux-gnu/libdl-2.17.so
+7f4263ec6000-7f4263ede000 r-xp 00000000 08:07 6291705                    /lib/x86_64-linux-gnu/libpthread-2.17.so
+7f4263ede000-7f42640dd000 ---p 00018000 08:07 6291705                    /lib/x86_64-linux-gnu/libpthread-2.17.so
+7f42640dd000-7f42640de000 r-xp 00017000 08:07 6291705                    /lib/x86_64-linux-gnu/libpthread-2.17.so
+7f42640de000-7f42640df000 rwxp 00018000 08:07 6291705                    /lib/x86_64-linux-gnu/libpthread-2.17.so
+7f42640df000-7f42640e3000 rwxp 00000000 00:00 0 
+7f42640e3000-7f4264106000 r-xp 00000000 08:07 6291687                    /lib/x86_64-linux-gnu/ld-2.17.so
+7f4264106000-7f4264107000 r-xs 00001000 08:07 3807208                    /home/kasyaar/.m2/repository/overtone/libs.handlers/0.2.0/libs.handlers-0.2.0.jar
+7f4264107000-7f4264108000 r-xs 00004000 08:07 3545579                    /home/kasyaar/.m2/repository/overtone/osc-clj/0.9.0/osc-clj-0.9.0.jar
+7f4264108000-7f426410e000 r-xs 0006a000 08:07 3278984                    /home/kasyaar/.m2/repository/overtone/overtone/0.9.0-SNAPSHOT/overtone-0.9.0-SNAPSHOT.jar
+7f426410e000-7f426410f000 r-xs 00004000 08:07 3807188                    /home/kasyaar/.m2/repository/org/clojure/core.logic/0.6.5/core.logic-0.6.5.jar
+7f426410f000-7f4264110000 r-xs 00005000 08:07 3278298                    /home/kasyaar/.m2/repository/clj-native/clj-native/0.9.3/clj-native-0.9.3.jar
+7f4264110000-7f4264113000 r-xs 00008000 08:07 3807198                    /home/kasyaar/.m2/repository/org/swinglabs/swingx/swingx-plaf/1.6.3/swingx-plaf-1.6.3.jar
+7f4264113000-7f4264114000 r-xs 00002000 08:07 3807580                    /home/kasyaar/.m2/repository/org/thnetos/cd-client/0.3.6/cd-client-0.3.6.jar
+7f4264114000-7f426412b000 r-xs 00113000 08:07 3807190                    /home/kasyaar/.m2/repository/org/swinglabs/swingx/swingx-core/1.6.3/swingx-core-1.6.3.jar
+7f426412b000-7f426412c000 r-xs 00000000 08:07 3807576                    /home/kasyaar/.m2/repository/clojure-complete/clojure-complete/0.2.2/clojure-complete-0.2.2.jar
+7f426412c000-7f426412d000 r-xs 00002000 08:07 3807575                    /home/kasyaar/.m2/repository/clj-http-lite/clj-http-lite/0.2.0/clj-http-lite-0.2.0.jar
+7f426412d000-7f426412e000 r-xs 00005000 08:07 3807186                    /home/kasyaar/.m2/repository/org/clojure/core.match/0.2.0-alpha11/core.match-0.2.0-alpha11.jar
+7f426412e000-7f426412f000 r-xs 00001000 08:07 3807207                    /home/kasyaar/.m2/repository/overtone/midi-clj/0.5.0/midi-clj-0.5.0.jar
+7f426412f000-7f4264131000 r-xs 00001000 08:07 3807577                    /home/kasyaar/.m2/repository/slingshot/slingshot/0.10.3/slingshot-0.10.3.jar
+7f4264131000-7f4264135000 r-xs 00b46000 08:07 3807335                    /home/kasyaar/.m2/repository/overtone/scsynth/3.5.7.0/scsynth-3.5.7.0.jar
+7f4264135000-7f4264136000 r-xs 00000000 08:07 3807212                    /home/kasyaar/.m2/repository/clj-glob/clj-glob/1.0.0/clj-glob-1.0.0.jar
+7f4264136000-7f426413a000 r-xs 0002f000 08:07 3545569                    /home/kasyaar/.m2/repository/javax/jmdns/jmdns/3.4.1/jmdns-3.4.1.jar
+7f426413a000-7f426413c000 r-xs 00008000 08:07 3807569                    /home/kasyaar/.m2/repository/org/clojure/tools.nrepl/0.2.1/tools.nrepl-0.2.1.jar
+7f426413c000-7f426413d000 r-xs 00002000 08:07 3807579                    /home/kasyaar/.m2/repository/cheshire/cheshire/4.0.3/cheshire-4.0.3.jar
+7f426413d000-7f4264140000 r-xs 0002d000 08:07 3807567                    /home/kasyaar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.0.6/jackson-core-2.0.6.jar
+7f4264140000-7f4264141000 r-xs 0001e000 08:07 3807292                    /home/kasyaar/.m2/repository/seesaw/seesaw/1.4.3/seesaw-1.4.3.jar
+7f4264141000-7f4264143000 r-xs 0000b000 08:07 3807568                    /home/kasyaar/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.0.6/jackson-dataformat-smile-2.0.6.jar
+7f4264143000-7f4264145000 r-xs 0001b000 08:07 3807192                    /home/kasyaar/.m2/repository/com/jgoodies/forms/1.2.1/forms-1.2.1.jar
+7f4264145000-7f4264149000 r-xs 00b6f000 08:07 3803455                    /home/kasyaar/.m2/repository/overtone/scsynth-extras/3.5.7.0/scsynth-extras-3.5.7.0.jar
+7f4264149000-7f426414b000 r-xs 00008000 08:07 3807193                    /home/kasyaar/.m2/repository/org/swinglabs/swingx/swingx-autocomplete/1.6.3/swingx-autocomplete-1.6.3.jar
+7f426414b000-7f426414f000 r-xs 000f3000 08:07 3545571                    /home/kasyaar/.m2/repository/net/java/dev/jna/jna/3.4.0/jna-3.4.0.jar
+7f426414f000-7f42641d4000 rwxp 00000000 00:00 0 
+7f42641d4000-7f42641d7000 rwxp 00000000 00:00 0 
+7f42641d7000-7f42641de000 r-xp 00000000 08:07 1729951                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/jli/libjli.so
+7f42641de000-7f42642df000 ---p 00007000 08:07 1729951                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/jli/libjli.so
+7f42642df000-7f42642e1000 rwxp 00008000 08:07 1729951                    /usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/jli/libjli.so
+7f42642e1000-7f42642e2000 rwxp 00000000 00:00 0 
+7f42642e2000-7f42642e3000 r-xs 00000000 08:07 3278930                    /home/kasyaar/.m2/repository/org/clojure/core.incubator/0.1.0/core.incubator-0.1.0.jar
+7f42642e3000-7f42642e4000 r-xs 00001000 08:07 3545577                    /home/kasyaar/.m2/repository/overtone/at-at/1.2.0/at-at-1.2.0.jar
+7f42642e4000-7f42642e5000 r-xs 00000000 08:07 3807269                    /home/kasyaar/.m2/repository/j18n/j18n/1.0.1/j18n-1.0.1.jar
+7f42642e5000-7f42642e9000 r-xs 0002e000 08:07 3807187                    /home/kasyaar/.m2/repository/com/miglayout/miglayout/3.7.4/miglayout-3.7.4.jar
+7f42642e9000-7f42642ea000 r-xs 00007000 08:07 3807197                    /home/kasyaar/.m2/repository/org/swinglabs/swingx/swingx-action/1.6.3/swingx-action-1.6.3.jar
+7f42642ea000-7f42642eb000 r-xs 00001000 08:07 3278985                    /home/kasyaar/.m2/repository/org/clojure/data.json/0.1.2/data.json-0.1.2.jar
+7f42642eb000-7f42642ed000 r-xs 00000000 08:07 3807206                    /home/kasyaar/.m2/repository/overtone/byte-spec/0.3.1/byte-spec-0.3.1.jar
+7f42642ed000-7f42642f7000 r-xs 000b9000 08:07 3807294                    /home/kasyaar/.m2/repository/org/fife/ui/rsyntaxtextarea/2.0.4.1/rsyntaxtextarea-2.0.4.1.jar
+7f42642f7000-7f42642f9000 r-xs 0000f000 08:07 3807203                    /home/kasyaar/.m2/repository/org/swinglabs/swingx/swingx-painters/1.6.3/swingx-painters-1.6.3.jar
+7f42642f9000-7f4264301000 rwxs 00000000 00:13 159800                     /tmp/hsperfdata_kasyaar/25083 (deleted)
+7f4264301000-7f4264302000 rwxp 00000000 00:00 0 
+7f4264302000-7f4264303000 ---p 00000000 00:00 0 
+7f4264303000-7f4264305000 rwxp 00000000 00:00 0 
+7f4264305000-7f4264306000 r-xp 00022000 08:07 6291687                    /lib/x86_64-linux-gnu/ld-2.17.so
+7f4264306000-7f4264308000 rwxp 00023000 08:07 6291687                    /lib/x86_64-linux-gnu/ld-2.17.so
+7fff6fcd4000-7fff6fcf7000 rwxp 00000000 00:00 0                          [stack]
+7fff6fd11000-7fff6fd13000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/home/kasyaar/workspace/tutorial/target/classes -Dtutorial.version=0.1.0-SNAPSHOT -Dfile.encoding=UTF-8 -Dclojure.debug=false -Djava.library.path=/home/kasyaar/workspace/tutorial/target/native/linux/x86_64 
+java_command: clojure.main -e (do (set! *warn-on-reflection* nil) (do nil (try (clojure.core/require (quote clojure.tools.nrepl.server)) (catch java.lang.Throwable t__6060__auto__ (clojure.core/println "Error loading" (clojure.core/str (quote clojure.tools.nrepl.server) ":") (clojure.core/or (.getMessage t__6060__auto__) (clojure.core/type t__6060__auto__))))) (try (clojure.core/require (quote complete.core)) (catch java.lang.Throwable t__6060__auto__ (clojure.core/println "Error loading" (clojure.core/str (quote complete.core) ":") (clojure.core/or (.getMessage t__6060__auto__) (clojure.core/type t__6060__auto__)))))) (do nil (clojure.core/let [server__6057__auto__ (clojure.tools.nrepl.server/start-server :bind "127.0.0.1" :port 0 :ack-port 56085 :handler (clojure.tools.nrepl.server/default-handler)) port__6058__auto__ (clojure.core/-> server__6057__auto__ clojure.core/deref :ss .getLocalPort)] (clojure.core/when false (clojure.core/println "nREPL server started on port" port__6058__auto__)) (clojure.core/spit "/home/kasyaar/workspace/tutorial/target/repl-port" port__6058__auto__) (.deleteOnExit (clojure.java.io/file "/home/kasyaar/workspace/tutorial/target" "repl-port")) (clojure.core/deref (clojure.core/promise)))))
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=:/home/kasyaar/.lein/self-installs/leiningen-2.1.2-standalone.jar
+PATH=/home/kasyaar/.rvm/gems/ruby-1.9.3-p194/bin:/home/kasyaar/.rvm/gems/ruby-1.9.3-p194@global/bin:/home/kasyaar/.rvm/rubies/ruby-1.9.3-p194/bin:/home/kasyaar/.rvm/bin:/home/kasyaar/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/kasyaar/bin:/home/kasyaar/apps/sbt/bin:/home/kasyaar/.rvm/bin:/home/kasyaar/local/bin:/home/kasyaar/.rvm/gems/ruby-1.9.3-p194/bin:/home/kasyaar/.rvm/gems/ruby-1.9.3-p194@global/bin:/home/kasyaar/.rvm/rubies/ruby-1.9.3-p194/bin:/home/kasyaar/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/usr/x86_64-pc-linux-gnu/gcc-bin/4.6.2:/usr/games/bin:/home/kasyaar/bin:/home/kasyaar/.rvm/bin:/usr/games/bin
+LD_LIBRARY_PATH=/usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.38/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.38/jre/../lib/amd64
+SHELL=/bin/zsh
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x8629a0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x8629a0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x710660], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x710660], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x710660], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x710660], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x713490], sa_mask[0]=0x00000004, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x713090], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x713090], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x713090], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x713090], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:wheezy/sid
+
+uname:Linux 3.8.0-22-generic #33-Ubuntu SMP Thu May 16 15:17:14 UTC 2013 x86_64
+libc:glibc 2.17 NPTL 2.17 
+rlimit: STACK 8192k, CORE 0k, NPROC 30393, NOFILE 4096, AS infinity
+load average:0.84 0.61 0.58
+
+/proc/meminfo:
+MemTotal:        3932600 kB
+MemFree:          558048 kB
+Buffers:            1276 kB
+Cached:           768808 kB
+SwapCached:        69688 kB
+Active:          2479600 kB
+Inactive:         723916 kB
+Active(anon):    2423320 kB
+Inactive(anon):   671896 kB
+Active(file):      56280 kB
+Inactive(file):    52020 kB
+Unevictable:         100 kB
+Mlocked:             100 kB
+SwapTotal:       4077564 kB
+SwapFree:        3632980 kB
+Dirty:               356 kB
+Writeback:             0 kB
+AnonPages:       2398984 kB
+Mapped:           161200 kB
+Shmem:            661696 kB
+Slab:              68624 kB
+SReclaimable:      34376 kB
+SUnreclaim:        34248 kB
+KernelStack:        5472 kB
+PageTables:        41228 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6043864 kB
+Committed_AS:    7577360 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      434476 kB
+VmallocChunk:   34359283760 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       63488 kB
+DirectMap2M:     4102144 kB
+
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3517U CPU @ 1.90GHz
+stepping	: 9
+microcode	: 0x12
+cpu MHz		: 800.000
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4789.43
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3517U CPU @ 1.90GHz
+stepping	: 9
+microcode	: 0x12
+cpu MHz		: 1900.000
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4789.43
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3517U CPU @ 1.90GHz
+stepping	: 9
+microcode	: 0x12
+cpu MHz		: 800.000
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4789.43
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3517U CPU @ 1.90GHz
+stepping	: 9
+microcode	: 0x12
+cpu MHz		: 1900.000
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4789.43
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 3932600k(558048k free), swap 4077564k(3632980k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (20.13-b02) for linux-amd64 JRE (1.6.0_38-b05), built on Nov 14 2012 02:12:33 by "java_re" with gcc 3.2.2 (SuSE Linux)
+
+time: Fri May 31 18:58:58 2013
+elapsed time: 847 seconds
+
